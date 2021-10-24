@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+	.applyPage{
+	margin: 0 auto;
+	width: 700px;
+	position:relative;
+	top:100px;
+	}
+	.subTitle{
+	border-bottom: #808080 solid 2px;
+	}
+	.subsubTitle{
+	color: #400080;
+	}
+	
+	.applyForm{
+	width: 700px;
+	
+	border: #808080 solid 2px;
+	border-radius: 10px;
+	}
+	h6 b{
+	font-size: 18px;
+    position: relative;
+    top: 20px;
+	margin:10px ;
+	color: #400080;
+
+		
+	}
+	
+	tr{
+	height: 50px;
+	}
+	
+	.tb{
+	width: 100%;
+	text-align: center;
+	margin-top:30px;
+	border-top: #808080 solid 1px;
+	padding-bottom:30px;
+	}
+
+	.tbname{
+	width: 150px;
+	border-right: #808080 solid 1px;
+	margin: 5px 5px 0px 5px;
+	padding-left:10px;
+	text-align: left;
+	}
+	
+	.form-control{
+	width: 300px;
+	height: 30px;
+	margin-left:10px;
+	}
+	
+	.btn{
+	margin: 0 auto;
+	width:90px;
+	height:30px;
+	}
+	
+	.btnPage{
+	text-align: center;
+	}
+	
+	textarea{
+	width: 500px;;
+	}
+	
+	div{
+	margin-top: 20px;
+	}
+	
+	.half{
+	width:150px;
+	}
+	
+	.gray{
+    height: 30px;
+	border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    
+	}
+	
+	.aa{
+	position: relative;
+    left: -65px;
+    }
+	.bb{
+	position: relative;
+    left: -315px;
+    }
+    
+    .textarea{
+    width: 90%;
+    height: 200px;
+    font-size: 13px;
+    padding:10px;
+    position: relative;
+    left: -10px;
+    
+    }
+    
+    .tdLength{
+    width:350px;
+    }
+   
