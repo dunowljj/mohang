@@ -17,44 +17,47 @@
 			</ul>
 		</div>
 	</div>
-	<footer class="footer text-center">
-		<div class="container">
-			<div class="row">
-				<!-- Footer Location-->
-				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">Location</h4>
-					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
-					</p>
+	<footer class="footer">
+		<div class="footer_box">
+			<div class="footer_container">
+				<div class="footer_container1">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">웨비나소개</a></li>
+						<li><a href="#">서비스소개</a></li>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">채용</a></li>
+					</ul>
 				</div>
-				<!-- Footer Social Icons-->
-				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="text-uppercase mb-4">Around the Web</h4>
-					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
-						class="fab fa-fw fa-facebook-f"></i></a> <a
-						class="btn btn-outline-light btn-social mx-1" href="#!"><i
-						class="fab fa-fw fa-twitter"></i></a> <a
-						class="btn btn-outline-light btn-social mx-1" href="#!"><i
-						class="fab fa-fw fa-linkedin-in"></i></a> <a
-						class="btn btn-outline-light btn-social mx-1" href="#!"><i
-						class="fab fa-fw fa-dribbble"></i></a>
+				<div class="footer_container1">
+					<ul>
+						<li><a href="#">고객센터</a></li>
+						<li>평일10-17시<a href="#">&nbsp;&nbsp;&nbsp;1:1문의하기</a></li>
+					</ul>
 				</div>
-				<!-- Footer About Text-->
-				<div class="col-lg-4">
-					<h4 class="text-uppercase mb-4">About Freelancer</h4>
-					<p class="lead mb-0">
-						Freelance is a free to use, MIT licensed Bootstrap theme created
-						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
-					</p>
+				<h4>모두의행사</h4>
+				<div class="footer_container1">
+					<div>
+					<span>(주)모두의행사 | 사업자등록번호 232-56-394029 | 통신판매업 신고번호 제 2021- 우이천로 22길</span>
+					</div>
+					<div>
+					<span>대표 xxx,xxx | 개인정보책임자 xxx | 서울특별시 xxxx xxxx</span>
+					</div>
+					<div class="footer_text">
+					모두의행사는 통신판매중개자이며 행사에 대한 당사자 및 주최자가 아닙니다. 따라서 모두의행사는 등록된 행사에 대해 책임지지 않습니다.
+					</div>
+					<div>
+						<ul>
+							<li><a href="#">서비스 이용 약관</a></li>
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><a href="#">전자금융거래 이용약관</a></li>
+							<li><a href="#">취소 및 환불 약관</a></li>
+							<li><a href="#">이메일 주소 무단수집 거부</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<!-- Copyright Section-->
-	<div class="copyright py-4 text-center text-white">
-		<div class="container">
-			<small>Copyright &copy; Your Website 2021</small>
-		</div>
-	</div>
 </body>
 </html>
