@@ -9,8 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import mohang.action.Action;
 import mohang.action.ActionForward;
+import mohang.action.general.GeneralAction;
+import mohang.action.general.InformationUpdateFormAction;
+import mohang.action.general.LikeListAction;
+import mohang.action.general.LikeListEmptyAction;
+import mohang.action.general.ReserveFormAction;
+import mohang.action.general.ReserveListAction;
+import mohang.action.general.ReviewListAction;
 
 @WebServlet("/general/*")
 public class GeneralController extends HttpServlet {
@@ -22,25 +28,61 @@ public class GeneralController extends HttpServlet {
 
 	public void doProcess(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String requestURI = request.getRequestURI(); // 전체경로
-		String contextPath = request.getContextPath(); // 현재 프로젝트 경로
+		String requestURI = request.getRequestURI(); 
+		String contextPath = request.getContextPath(); 
+		String command = requestURI.substring(contextPath.length() + 9); 
+		System.out.println(command);
+		GeneralAction action = null; 
+		ActionForward forward = null; 
 		
-		// command : 전체경로 - ( 현재 프로젝트 경로 + 서블릿 매핑 )
-		// 실제 맨뒤에 실행할 주소값만 가져옴
-		String command = requestURI.substring(contextPath.length() + 10); 
-		Action action = null; // 실행할 액션을 위한 변수
-		ActionForward forward = null; // 이동할Path 또는 페이지 이동방식(redirect, dispatcher)을 반환받기 위한 변수
+		if(command.equals("informationUpdateForm.do")) {
+    		action = new InformationUpdateFormAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("reserveForm.do")) {
+    		action = new ReserveFormAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("reserveList.do")) {
+    		action = new ReserveListAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("likeList.do")) {
+    		action = new LikeListAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("likeListEmpty.do")) {
+    		action = new LikeListEmptyAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("reviewList.do")) {
+    		action = new ReviewListAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}
 		
-		//아래부터는 이벤트에 맞는 코드 작성
-		
-		 
-		//이벤트 실행후 처리할 로직
 		if(forward != null) {
 			if(forward.isRedirect()) {
-				//ActionForward의 isRedirect값이 true면 redirect 방식으로 페이지 이동
 				response.sendRedirect(forward.getPath()); 
 			}else {
-				//ActionForward의 isRedirect값이 false면 dispatcher 방식으로 페이지 이동
 				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath()); 
 				dispatcher.forward(request, response);
 			}
