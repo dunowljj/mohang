@@ -17,9 +17,15 @@ var year = now.getFullYear();	// 연도
 var month = now.getMonth()+1;	// 월
 var lastDate = new Date(year, month, 0).getDate();
 $(function () {
-	
 	document.getElementById("month").innerHTML='<em>'+year+'년</em>'+'<em>'+month+'월</em>';
-
+	document.getElementById("day").innerHTML =html;
+	var html='<ul>';
+	for(var i=1;i<=lastDate;i++){
+		html+= '<li><a href="#" class="on">'+i+'</a></li>';
+	}	
+	html+='</ul>';
+	document.getElementById("day").innerHTML =html;
+	html = '';
 	$('#year_prev').click(function () {
 		if(month==1){
 			month=13;
@@ -28,7 +34,14 @@ $(function () {
 	    month = month-1;
 		document.getElementById("month").innerHTML='<em>'+year+'년</em>'+'<em>'+month+'월</em>';
 		lastDate = new Date(year, month,0).getDate();
-		
+		document.getElementById("day").innerHTML =html;
+		var html='<ul>';
+		for(var i=1;i<=lastDate;i++){
+			html+= '<li><a href="#" class="on">'+i+'</a></li>';
+		}	
+		html+='</ul>';
+		document.getElementById("day").innerHTML =html;
+		html = '';
 		
 	})
 	$('#year_next').click(function () {
@@ -39,17 +52,17 @@ $(function () {
 		month = month+1;
 		document.getElementById("month").innerHTML='<em>'+year+'년</em>'+'<em>'+month+'월</em>';
 		lastDate = new Date(year, month,0).getDate();
-		
+		document.getElementById("day").innerHTML =html;
+		var html='<ul>';
+		for(var i=1;i<=lastDate;i++){
+			html+= '<li><a href="#" class="on">'+i+'</a></li>';
+		}	
+		html+='</ul>';
+		document.getElementById("day").innerHTML =html;
+		html = '';
 		
 	})
-	document.getElementById("day").innerHTML =html;
-	var html='<ul>';
-	for(var i=1;i<=lastDate;i++){
-		html+= '<li><a href="#" class="on">'+i+'</a></li>';
-	}	
-	html+='</ul>';
-	document.getElementById("day").innerHTML =html;
-	html = '';
+	
 })
 
 
