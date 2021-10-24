@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.textarea1{
+   
+}
+
+#dark{
+	margin-left : 300px;
+	background-color : black;
+	color : white; 
+}
+
+#ee{
+	width : 300px;
+	height: 200px;
+}
+
+
+#btn{
+	margin-left:300px;
+}
