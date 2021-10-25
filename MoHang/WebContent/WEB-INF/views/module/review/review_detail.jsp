@@ -18,7 +18,7 @@
 	</div>
 </div>
 <div>
-	<img src="images/모행.png" alt="테스트입니다" width="800" height="100" />
+	<img src="resources/images/모행.png" alt="테스트입니다" width="800" height="100" />
 </div>
 리뷰내용
 <hr>
