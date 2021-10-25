@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/event_detail.css">
+<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/admin_event_detail.css">
 </head>
 <body>
 <nav> 
