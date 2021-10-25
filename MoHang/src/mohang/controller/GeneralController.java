@@ -14,6 +14,7 @@ import mohang.action.general.GeneralAction;
 import mohang.action.general.InformationUpdateFormAction;
 import mohang.action.general.LikeListAction;
 import mohang.action.general.LikeListEmptyAction;
+import mohang.action.general.ModalPrAction;
 import mohang.action.general.ReserveFormAction;
 import mohang.action.general.ReserveListAction;
 import mohang.action.general.ReviewListAction;
@@ -72,6 +73,13 @@ public class GeneralController extends HttpServlet {
 			}
     	}else if(command.equals("reviewList.do")) {
     		action = new ReviewListAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("modal.do")) {
+    		action = new ModalPrAction();
     		try {
 				forward = action.execute(request, response);	
 			} catch (Exception e) {
