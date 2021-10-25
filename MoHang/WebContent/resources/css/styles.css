@@ -11622,18 +11622,15 @@ html {
 }
 #container{
 	width: 1265px;
-    max-height: 1000px;
     margin: 0 auto;
 }
 #container-box{
     margin-top: 15px;
-    max-height: 1230px;
+    max-height: 1320px;
     margin-bottom: 50px;
-    height: 1230px;
 }
 .footer_box{
-    width: 1900px;
-    margin-top: 25px;
+    width: 1320px;
     height: 300px;
 }
 .footer_container{
