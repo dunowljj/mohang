@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 <!-- slick -->
 <link rel="stylesheet" type="text/css" href="../resources/css/slick.css" />
-<link rel="stylesheet" type="text/css"
-	href="../resources/css/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/slick-theme.css" />
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <script type="text/javascript" src="../resources/js/jquery.js"></script>
 <script type="text/javascript" src="../resources/js/slick.js"></script>
 <!-- 달력 -->
@@ -194,17 +194,5 @@
 
 		</div>
 	</nav>
-	<div id="header_nav">
-		<ul>
-			<li><a href="#">전체</a></li>
-			<li><a href="#">사업/창업</a></li>
-			<li><a href="#">IT/개발</a></li>
-			<li><a href="#">마케팅/홍보</a></li>
-			<li><a href="#">디자인/기획</a></li>
-			<li><a href="#">문화/예술</a></li>
-			<li><a href="#">취미/생활</a></li>
-			<li><a href="#">건강/의료</a></li>
-			<li><a href="/MoHang/Review/ReviewList.do">리뷰게시판</a></li>
-		</ul>
-	</div>
+
 </html>

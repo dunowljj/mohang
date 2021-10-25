@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +11,26 @@
 	*{font-family: 'Jua', sans-serif;}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
-<link href="./resources/css/bootstrap.css" rel="stylesheet" />
+<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../resources/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-	<p style="font-size:30px"> 
-	<span style="color: #000000;">리뷰게시판</span></p>
-
+	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+	
+	<div id="container-box1">
+	<div id="container">
+	<p style="font-size: 30px">
+		<span style="color: #000000;">리뷰게시판</span>
+	</p>
+	
 	<table class="table table-hover">
+	<colgroup>
+		 <col style="width:30px;">
+		 <col style="width:150px;">
+		 <col style="width:50px;">
+		 <col style="width:70px;">
+		 <col style="width:30px;">		 
+	</colgroup>
 		<thead>
 			<tr class="table-active">
 				<th scope="col"><font style="vertical-align: inherit;"><font
@@ -35,8 +49,8 @@
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">1</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">바보</font></font></td>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">바보</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">김원형</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
@@ -160,5 +174,8 @@
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
 		</form>
 		</div>
+		</div>
+		</div>
+		<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>

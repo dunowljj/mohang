@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.main.MainAction;
+import mohang.action.review.ReviewDetailAction;
 import mohang.action.review.ReviewListAction;
 
 @WebServlet("/Review/*")
@@ -28,6 +29,13 @@ public class ReviewController extends HttpServlet {
     	ActionForward forward = null;
     	if(command.equals("ReviewList.do")) {
     		action = new ReviewListAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("ReviewDetail.do")) {
+    		action = new ReviewDetailAction();
     		try {
 				forward = action.execute(request, response);	
 			} catch (Exception e) {

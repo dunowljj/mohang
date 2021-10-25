@@ -10,12 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
 
-#page-top {
-  font-family: "Noto Sans KR", sans-serif;
+
+
+*{
+	font-family: 'Jua', sans-serif;
 }
+
  .carousel-control-prev-icon{
   background :  black;
   top: 205px;
@@ -24,6 +25,8 @@
   background : black;
   top: 205px;
  }
+ 
+
  
 :root {
   --bs-blue: #0d6efd;
@@ -11770,4 +11773,9 @@ span{
     font-size: 22px !important;
     line-height: 43px !important;
     height: 39px !important;
+}
+#container-box1{
+    margin-top: 140px;
+    max-height: 1230px;
+    margin-bottom: 85px;
 }

@@ -8477,10 +8477,10 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-secondary {
+/* .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
-}
+} */
 
 .bg-success {
   --bs-bg-opacity: 1;
@@ -11531,7 +11531,7 @@ legend {
 	width: 300px;
 	position: absolute;
 	left:50%;
-	margin-left: 200px; 
+	margin-left: 335px; 
 }
 
 .page{
