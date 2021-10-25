@@ -6,12 +6,7 @@
 <meta charset="UTF-8">
 <title>Organization Apply Form</title>
 
-<link href="${pageContext.request.contextPath}/resources/css/organization.css" rel="stylesheet" type="text/css">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-	crossorigin="anonymous">
+<link href="../resources/css/organization.css" rel="stylesheet">
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
@@ -19,6 +14,9 @@
 
 </head>
 <body>
+<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+<div id="container-box1">
+	<div id="container">
 
 	<div class="applyPage">
 		<div class="subTitle">
@@ -63,7 +61,9 @@
 	</form>
 	</div>
 	<!-- applyPage -->
-
+</div>
+</div>
+<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 
 </body>
 </html>

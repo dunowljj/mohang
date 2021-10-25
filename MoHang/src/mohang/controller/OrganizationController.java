@@ -34,10 +34,11 @@ public class OrganizationController extends HttpServlet {
 		System.out.println(command);
 		
 		
-		
-		 RequestDispatcher d =
-		 request.getRequestDispatcher("/WEB-INF/views/module/event/insertForm.jsp");
-		  d.forward(request, response);
+		/*
+		 * RequestDispatcher d =
+		 * request.getRequestDispatcher("/WEB-INF/views/module/event/insertForm.jsp");
+		 * d.forward(request, response);
+		 */
 		 
 
 		
