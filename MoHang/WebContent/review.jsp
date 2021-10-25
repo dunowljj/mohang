@@ -9,8 +9,8 @@
 	*{font-family: 'Jua', sans-serif;}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<link href="./Resources/css/bootstrap.min.css" rel="stylesheet" />
-<link href="./Resources/css/bootstrap.css" rel="stylesheet" />
+<link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="./resources/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
 	<p style="font-size:30px"> 
