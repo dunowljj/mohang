@@ -8,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+	<div id="container-box1">
+	<div id="container">
+	
 	<div class='general_wrapper'>
 		<div class='general_subhead'>
 			<h3>참가한 행사</h3>
@@ -114,6 +118,9 @@
 		
 		
 	</div>
+	</div>
+	</div>
+	<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 	
 </body>
 </html>
