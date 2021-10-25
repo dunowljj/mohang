@@ -26,15 +26,19 @@ public class OrganizationController extends HttpServlet {
 			throws ServletException, IOException {
 		String requestURI = request.getRequestURI();
 		String contextPath = request.getContextPath(); 
-		
+		 	
 		
 		String command = requestURI.substring(contextPath.length() + 14); 
 		Action action = null; 
 		ActionForward forward = null; 
 		System.out.println(command);
 		
-		RequestDispatcher d = request.getRequestDispatcher("/WEB-INF/views/module/event/insertForm.jsp"); 
-		d.forward(request, response);
+		
+		
+		 RequestDispatcher d =
+		 request.getRequestDispatcher("/WEB-INF/views/module/event/insertForm.jsp");
+		  d.forward(request, response);
+		 
 
 		
 		if(command.equals("applyForm.do")) {
