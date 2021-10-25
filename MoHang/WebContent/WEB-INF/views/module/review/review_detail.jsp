@@ -21,11 +21,7 @@
 	</div>
 </div>
 <div>
-<<<<<<< HEAD
-	<img src="resources/images/모행.png" alt="테스트입니다" width="800" height="100" />
-=======
 	<img src="../resources/images/모행.png" alt="테스트입니다" width="800" height="100" />
->>>>>>> origin/won
 </div>
 리뷰내용
 <hr>
