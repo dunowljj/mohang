@@ -16,11 +16,24 @@
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
-	
+	<div id="header_nav">
+		<ul>
+			<li><a href="#">전체</a></li>
+			<li><a href="#">사업/창업</a></li>
+			<li><a href="#">IT/개발</a></li>
+			<li><a href="#">마케팅/홍보</a></li>
+			<li><a href="#">디자인/기획</a></li>
+			<li><a href="#">문화/예술</a></li>
+			<li><a href="#">취미/생활</a></li>
+			<li><a href="#">건강/의료</a></li>
+			<li><a href="/MoHang/Review/ReviewList.do">리뷰게시판</a></li>
+		</ul>
+	</div>
 	<div id="container-box1">
 	<div id="container">
-	<p style="font-size: 30px">
-		<span style="color: #000000;">리뷰게시판</span>
+	
+	<p style="font-size: 30px; ">
+		<span style="color: #000000;font-size: 20px;">리뷰게시판</span>
 	</p>
 	
 	<table class="table table-hover">

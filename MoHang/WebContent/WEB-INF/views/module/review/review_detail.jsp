@@ -9,6 +9,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+
 <div id="container-box1">
 	<div id="container">
 리뷰게시판
