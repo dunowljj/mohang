@@ -11535,10 +11535,10 @@ html {
 }
 #header_nav{
     height: 50px;
-    float: left;
     width: 1050px;
     margin-top: 125px;
     margin-left: 315px;
+    position: relative;
 }
 #header_nav ul{
     list-style-type: none;
