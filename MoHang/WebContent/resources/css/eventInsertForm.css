@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
 	.applyPage{
-	margin: 0 auto;
-	width: 700px;
-	position:relative;
-	top:100px;
+	
+	width: 100%;
+	
 	}
 	.subTitle{
 	border-bottom: #808080 solid 2px;
@@ -14,7 +13,7 @@
 	}
 	
 	.applyForm{
-	width: 700px;
+		width: 100%;
 	
 	border: #808080 solid 2px;
 	border-radius: 10px;
