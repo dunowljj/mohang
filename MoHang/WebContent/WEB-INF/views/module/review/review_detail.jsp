@@ -8,6 +8,9 @@
 <link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/review_detail.css">
 </head>
 <body>
+<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+<div id="container-box1">
+	<div id="container">
 리뷰게시판
 <hr>
 <div class="star-ratings">
@@ -18,7 +21,7 @@
 	</div>
 </div>
 <div>
-	<img src="images/모행.png" alt="테스트입니다" width="800" height="100" />
+	<img src="../resources/images/모행.png" alt="테스트입니다" width="800" height="100" />
 </div>
 리뷰내용
 <hr>
@@ -34,5 +37,8 @@
 <div id ="btn">
 	<button type="button" id="dark">등록</button>
 </div>
+</div>
+</div>
+<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>
