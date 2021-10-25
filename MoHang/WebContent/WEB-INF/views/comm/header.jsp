@@ -194,4 +194,17 @@
 
 		</div>
 	</nav>
+	<div id="header_nav">
+		<ul>
+			<li><a href="#">전체</a></li>
+			<li><a href="#">사업/창업</a></li>
+			<li><a href="#">IT/개발</a></li>
+			<li><a href="#">마케팅/홍보</a></li>
+			<li><a href="#">디자인/기획</a></li>
+			<li><a href="#">문화/예술</a></li>
+			<li><a href="#">취미/생활</a></li>
+			<li><a href="#">건강/의료</a></li>
+			<li><a href="#">리뷰게시판</a></li>
+		</ul>
+	</div>
 </html>
