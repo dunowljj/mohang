@@ -139,13 +139,12 @@
 {
     position: relative;
 
-    display: inline-block;
 
     width: 20px;
     height: 20px;
     margin: 0 5px;
     padding: 0;
-
+    display: none;
     cursor: pointer;
 }
 .slick-dots li button

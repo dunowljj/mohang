@@ -58,15 +58,113 @@
 
 <div id="container-box">
 	<div id="container">
-		<h1>이달의 행사 일정</h1>
+		<div class="month_event_box">
+		<h2>이달의 행사 일정</h2>
 		<form action="" method="post" id="year_monthform">
 			<input type="hidden" name="year" value="" >
 			<input type="hidden" name="month" value="" >
-			<div><a href="#" id="year_prev"><img src="../resources/images/prev.png" ></a><div id="month"></div><a href="#" id="year_next"><img src="../resources/images/next.png" ></a></div>
+			<div class="day_box"><a href="#" id="year_prev"><img src="../resources/images/prev.png" ></a><div id="month"></div><a href="#" id="year_next"><img src="../resources/images/next.png" ></a></div>
 			<div id="day">
-				
+			</div>
+			<div class="slider-div">
+				<div class="eventbox">
+					<div class="eventbox_in">
+						<div class="eventbox_img">
+							<div class="heart">
+								<img src="../resources/images/하트.png" alt=""
+									style="width: 30px; height: 30px;">
+							</div>
+							<a href="#"><img src="" alt=""
+								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						</div>
+						<div class="eventbox_context">
+							<span>날짜</span>
+							<p class="event_title">행사 제목</p>
+						</div>
+						<div class="eventbox_context2">
+							<span class="period">기간</span>
+						</div>
+					</div>
+				</div>
+				<div class="eventbox">
+					<div class="eventbox_in">
+						<div class="eventbox_img">
+							<div class="heart">
+								<img src="../resources/images/꽉찬하트.png" alt=""
+									style="width: 30px; height: 30px;">
+							</div>
+							<a href="#"><img src="" alt=""
+								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						</div>
+						<div class="eventbox_context">
+							<span>날짜</span>
+							<p class="event_title">행사 제목</p>
+						</div>
+						<div class="eventbox_context2">
+							<span class="period">기간</span>
+						</div>
+					</div>
+				</div>
+				<div class="eventbox">
+					<div class="eventbox_in">
+						<div class="eventbox_img">
+							<div class="heart">
+								<img src="../resources/images/하트.png" alt=""
+									style="width: 30px; height: 30px;">
+							</div>
+							<a href="#"><img src="" alt=""
+								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						</div>
+						<div class="eventbox_context">
+							<span>날짜</span>
+							<p class="event_title">행사 제목</p>
+						</div>
+						<div class="eventbox_context2">
+							<span class="period">기간</span>
+						</div>
+					</div>
+				</div>
+				<div class="eventbox">
+					<div class="eventbox_in">
+						<div class="eventbox_img">
+							<div class="heart">
+								<img src="../resources/images/하트.png" alt=""
+									style="width: 30px; height: 30px;">
+							</div>
+							<a href="#"><img src="" alt=""
+								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						</div>
+						<div class="eventbox_context">
+							<span>날짜</span>
+							<p class="event_title">행사 제목</p>
+						</div>
+						<div class="eventbox_context2">
+							<span class="period">기간</span>
+						</div>
+					</div>
+				</div>
+				<div class="eventbox">
+					<div class="eventbox_in">
+						<div class="eventbox_img">
+							<div class="heart">
+								<img src="../resources/images/하트.png" alt=""
+									style="width: 30px; height: 30px;">
+							</div>
+							<a href="#"><img src="" alt=""
+								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						</div>
+						<div class="eventbox_context">
+							<span>날짜</span>
+							<p class="event_title">행사 제목</p>
+						</div>
+						<div class="eventbox_context2">
+							<span class="period">기간</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</form>
+		</div>
 		<h3>추천 행사</h3>
 		<div class="slider-div">
 			<div class="eventbox">
@@ -112,38 +210,113 @@
 				</div>
 			</div>
 			<div class="eventbox">
-				<div class="eventbox_in"></div>
+				<div class="eventbox_in">
+					<div class="eventbox_img">
+						<div class="heart">
+							<img src="../resources/images/하트.png" alt=""
+								style="width: 30px; height: 30px;">
+						</div>
+						<a href="#"><img src="" alt=""
+							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="eventbox_context">
+						<span>날짜</span>
+						<p class="event_title">행사 제목</p>
+					</div>
+					<div class="eventbox_context2">
+						<span class="price">가격</span>
+						<div class="none"></div>
+						<img class="view" src="../resources/images/눈.png"><span>0</span>
+					</div>
+				</div>
 			</div>
 			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
+				<div class="eventbox_in">
+					<div class="eventbox_img">
+						<div class="heart">
+							<img src="../resources/images/하트.png" alt=""
+								style="width: 30px; height: 30px;">
+						</div>
+						<a href="#"><img src="" alt=""
+							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="eventbox_context">
+						<span>날짜</span>
+						<p class="event_title">행사 제목</p>
+					</div>
+					<div class="eventbox_context2">
+						<span class="price">가격</span>
+						<div class="none"></div>
+						<img class="view" src="../resources/images/눈.png"><span>0</span>
+					</div>
+				</div>
 			</div>
 			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
+				<div class="eventbox_in">
+					<div class="eventbox_img">
+						<div class="heart">
+							<img src="../resources/images/하트.png" alt=""
+								style="width: 30px; height: 30px;">
+						</div>
+						<a href="#"><img src="" alt=""
+							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="eventbox_context">
+						<span>날짜</span>
+						<p class="event_title">행사 제목</p>
+					</div>
+					<div class="eventbox_context2">
+						<span class="price">가격</span>
+						<div class="none"></div>
+						<img class="view" src="../resources/images/눈.png"><span>0</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<h3>베스트 행사</h3>
 		<div class="slider-div">
+			<div class="eventbox">
+				<div class="eventbox_in">
+					<div class="eventbox_img">
+						<div class="heart">
+							<img src="../resources/images/하트.png" alt=""
+								style="width: 30px; height: 30px;">
+						</div>
+						<a href="#"><img src="" alt=""
+							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="eventbox_context">
+						<span>날짜</span>
+						<p class="event_title">행사 제목</p>
+					</div>
+					<div class="eventbox_context2">
+						<span class="price">가격</span>
+						<div class="none"></div>
+						<img class="view" src="../resources/images/눈.png"><span>0</span>
+					</div>
+				</div>
+			</div>
+			<div class="eventbox">
+				<div class="eventbox_in">
+					<div class="eventbox_img">
+						<div class="heart">
+							<img src="../resources/images/하트.png" alt=""
+								style="width: 30px; height: 30px;">
+						</div>
+						<a href="#"><img src="" alt=""
+							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="eventbox_context">
+						<span>날짜</span>
+						<p class="event_title">행사 제목</p>
+					</div>
+					<div class="eventbox_context2">
+						<span class="price">가격</span>
+						<div class="none"></div>
+						<img class="view" src="../resources/images/눈.png"><span>0</span>
+					</div>
+				</div>
+			</div>
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
@@ -185,36 +358,6 @@
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
 				</div>
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
-
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in"></div>
 			</div>
 		</div>
 	</div>
