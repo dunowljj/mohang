@@ -18,8 +18,13 @@
 
 <link href="../resources/css/eventInsertForm.css" rel="stylesheet">
 
-
-
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+ 
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/event_insertForm.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="applyPage">
@@ -44,13 +49,13 @@
 					</tr>
 					<tr>
 						<td class="tbname">행사기간</td>
-						<td class="tbinput aa"><input type="date" class="gray">
-							~ <input type="date" class="gray"></td>
+						<td class="tbinput aa"><input type="text" class="gray" id="fromDate" > 
+							~ <input type="text" class="gray" id="toDate" > </td>
 					</tr>
 					<tr>
 						<td class="tbname">모집기간</td>
-						<td class="tbinput aa"><input type="date" class="gray">
-							~ <input type="date" class="gray"></td>
+						<td class="tbinput aa"><input type="text" class="gray" id="recruiteFromDate" > 
+							~ <input type="text" class="gray" id="recruiteToDate" > </td>
 					</tr>
 					<tr>
 						<td class="tbname">대관장소</td>
@@ -100,8 +105,8 @@
 					<tr>
 						<td class="tbname">가격</td>
 						<td class="tbinput"><input type="text"
-							class="form-control half" placeholder="5,000"></td>
-						<td class="bb"><input type="checkbox"> 무료</td>
+							class="form-control half" placeholder="5,000" name="e_price" id="e_price" value=""></td>
+						<td class="bb"><input type="checkbox"  name="e_priceCheck" id="e_priceCheck" onClick="checkDisable(this.form)" > 무료</td>
 					</tr>
 					<tr>
 						<td class="tbname">행사대표이미지</td>

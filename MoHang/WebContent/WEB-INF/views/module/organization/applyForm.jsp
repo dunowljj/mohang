@@ -34,18 +34,21 @@
 				<table class="tb">
 					<tr>
 						<td class="tbname">단체명</td>
-						<td class="tbinput"><input type="text" class="form-control" name="o_name"
-							placeholder="ex) 우리강산푸르게"></td>
+						<td class="tbinput">
+							<input type="text" class="form-control" name="o_name"placeholder="ex) 우리강산푸르게">
+						</td>
 					</tr>
 					<tr>
 						<td class="tbname">단체홈페이지</td>
-						<td class="tbinput"><input type="text" class="form-control" name="o_homepage"
-							placeholder="ex) www.green.org"></td>
+						<td class="tbinput">
+							<input type="text" class="form-control" name="o_homepage"placeholder="ex) www.green.org">
+						</td>
 					</tr>
 					<tr>
 						<td class="tbname">단체전화번호</td>
-						<td class="tbinput"><input type="text" class="form-control" name="o_phonenumber"
-							placeholder="ex) 02-0000-0000"></td>
+						<td class="tbinput">
+							<input type="text" class="form-control" name="o_phonenumber"placeholder="ex) 02-0000-0000">
+						</td>
 					</tr>
 				</table>
 			</div>
@@ -53,7 +56,6 @@
 
 			<div class="btnPage">
 			
-			<input class="btn btn-primary btn-sm"  type="button" value="바보">
 				<input class="btn btn-primary btn-sm" type="submit" value="제출">
 				&nbsp&nbsp&nbsp&nbsp
 				<input class="btn btn-secondary btn-sm" type="reset" value="취소">
