@@ -10,14 +10,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@font-face {
-    font-family: 'SDSamliphopangche_Outline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-body{
-	font-family: 'SDSamliphopangche_Outline';
+ 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
+
+#page-top {
+  font-family: "Noto Sans KR", sans-serif;
 }
  .carousel-control-prev-icon{
   background :  black;
@@ -11541,7 +11538,7 @@ html {
     float: left;
     width: 1050px;
     margin-top: 125px;
-    margin-left: 305px;
+    margin-left: 315px;
 }
 #header_nav ul{
     list-style-type: none;
@@ -11746,4 +11743,31 @@ span{
 .month_event_box{
     margin-bottom: 60px;
     height: 450px;
+}
+.eventus-input{
+    background-color: #fcfcfc !important;
+    border: 1px solid rgba(17,17,17,.03) !important;
+    color: #000;
+    padding-left: 48px !important;
+    padding-right: 20px !important;
+    text-overflow: ellipsis;
+    border-radius: 30px !important;
+    height: 2.7rem !important;
+    width: 350px;
+}
+.event-search{
+    width: 350px;
+    position: relative;
+    margin-left: 110px;
+}
+#search_img{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background-size: cover;
+    left: 18px;
+    color: #cbcbcb;
+    font-size: 22px !important;
+    line-height: 43px !important;
+    height: 39px !important;
 }
