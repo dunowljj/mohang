@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body{
-	margin: 0;
+/* 	margin: 0; */
 }
 .general_wrapper{
 	width : 80%;
-	margin: 0 auto;
+/* 	margin: 0 auto; */
 }
 button{
 	outline : 0;
