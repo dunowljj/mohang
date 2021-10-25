@@ -5,17 +5,31 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/review_detail.css">
+<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/admin_review_detail.css">
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+<div id="header_nav">
+		<ul>
+			<li><a href="#">전체</a></li>
+			<li><a href="#">사업/창업</a></li>
+			<li><a href="#">IT/개발</a></li>
+			<li><a href="#">마케팅/홍보</a></li>
+			<li><a href="#">디자인/기획</a></li>
+			<li><a href="#">문화/예술</a></li>
+			<li><a href="#">취미/생활</a></li>
+			<li><a href="#">건강/의료</a></li>
+			<li><a href="/MoHang/Review/ReviewList.do">리뷰게시판</a></li>
+		</ul>
+	</div>
+
 <div id="container-box1">
 	<div id="container">
 리뷰게시판
 <hr>
 <div class="star-ratings">
-	<div  class="star-ratings-fill space-x-2 text-lg" :style="{ width: ratingToPercent + '%' }">
-		<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+	<div  class="star-ratings-fill-space-x-2-text-lg" :style="{ width: ratingToPercent + '%' }">
+		<div class="div_none"></div><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 		날짜    
 		[조회수]
 	</div>
