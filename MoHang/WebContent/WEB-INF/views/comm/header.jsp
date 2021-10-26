@@ -149,10 +149,10 @@
 		class="navbar navbar-expand-lg text-uppercase fixed-top bg-secondary"
 		id="mainNav">
 		<div class="container">
-			<a class="navbar-brand" href="#page-top"><img
+			<a class="navbar-brand" href="/MoHang/Main/MoHang.do"><img
 				src="../resources/images/logo.png"
 				style="width: 140px; height: 80p; background: black;"></a>
-			<form method="post" action="" class="event-search" >
+			<form method="post" action="/MoHang/Search/eventsearch.do" class="event-search" >
 				<i class="fas fa-search" id="search_img"></i>
 				 <input	class="eventus-input" id="einput" type="search">
 			</form>
@@ -169,7 +169,7 @@
 				<div id="pro_box">
 					<a href="#"><img src="../resources/images/프로필.png"></a>
 					<div class="button">
-						<a href="#"><img src="../resources/images/button.png"></a>
+						<img src="../resources/images/button.png">
 					</div>
 					<div id="myPage1" style="display: none">
 						<ul>

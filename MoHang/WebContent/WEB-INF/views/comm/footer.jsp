@@ -36,7 +36,7 @@
 						<li>평일10-17시<a href="#">&nbsp;&nbsp;&nbsp;1:1문의하기</a></li>
 					</ul>
 				</div>
-				<h4>모두의행사</h4>
+				<p style="color: orange;font-size: 30px; font-weight: 700;">모두의행사</p>
 				<div class="footer_container1">
 					<div>
 					<span>(주)모두의행사 | 사업자등록번호 232-56-394029 | 통신판매업 신고번호 제 2021- 우이천로 22길</span>
