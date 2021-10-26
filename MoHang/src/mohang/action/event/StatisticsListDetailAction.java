@@ -6,14 +6,14 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 
-public class ApplyListAction implements Action{
+public class StatisticsListDetailAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	ActionForward forward = new ActionForward();
 		
 		forward.setRedirect(false);
-		forward.setPath("/WEB-INF/views/module/event/review.jsp");
+		forward.setPath("/WEB-INF/views/module/event/statisticsListDetail.jsp");
 		return forward;
 	}
 

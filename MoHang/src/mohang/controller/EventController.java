@@ -11,13 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import mohang.action.Action;
 import mohang.action.ActionForward;
-import mohang.action.event.ApplyListAction;
 import mohang.action.event.EventDetailAction;
 import mohang.action.event.InsertFormAction;
+import mohang.action.event.StatisticsListDetailAction;
 
-/**
- * Servlet implementation class Eventcontroller
- */
 @WebServlet("/event/*")
 public class EventController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -46,8 +43,8 @@ public class EventController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if(command.equals("applyList.do")) {
-			action = new ApplyListAction();
+		} else if(command.equals("statisticsListDetail.do")) {
+			action = new StatisticsListDetailAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
