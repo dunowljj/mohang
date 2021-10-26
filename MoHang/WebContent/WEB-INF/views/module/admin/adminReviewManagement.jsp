@@ -32,7 +32,7 @@
 			<input class="form-control me-sm-2"type="text" placeholder="Search"    style=" width: auto;">
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">공지사항</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit"><a href="/MoHang/admin/AdminReview.do">리뷰</a></button>
+			<button class="btn btn-secondary my-2 my-sm-0" type="submit">리뷰</button>
 		</form>
 	
 	
@@ -45,101 +45,116 @@
 		 <col style="width:50px;">
 		 <col style="width:70px;">
 		 <col style="width:30px;">	
+		 <col style="width:50px;">	
 		 
 	</colgroup>
 		<thead>
 			<tr class="table-active">
 				<th scop="col"><input type="checkbox"></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">이름</font></font></th>
+						style="vertical-align: inherit;">번호</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">아이디</font></font></th>
+						style="vertical-align: inherit;">제목</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">전화번호</font></font></th>
+						style="vertical-align: inherit;">작성자</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">나이</font></font></th>
+						style="vertical-align: inherit;">작성일</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">비고</font></font></th>
-			</tr>
+						style="vertical-align: inherit;">조회수</font></font></th>
+				<th scope="col"><font style="vertical-align: inherit;"><font
+							style="vertical-align: inherit;"></font></font></th>
+				</tr>
 		</thead>
 		<tbody>
 			<tr>
 			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">이서준</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
 				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">서준123</font></font></a></td>
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1짱나이</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			<tr>
 			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">이용환</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">용환123</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">2짱나이</font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			<tr>
 			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">이상엽</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">상엽123</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">3짱나이</font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
+			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">이정준</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">정준123</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">4짱나이</font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
+			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">최지혜</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">지혜123</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">5짱나이</font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
+			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">김원형</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">원형123</font></font></td>
+						style="vertical-align: inherit;">이서준</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">12/8</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">5짱나이</font></font></td>
+						style="vertical-align: inherit;">99999</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>수정</button>&nbsp;<button>삭제</button></font></font></td>
 			</tr>
 			
 		</tbody>
@@ -162,13 +177,11 @@
 		
 		<div class="choice_cancel">
 			<button type="button" class="btn btn-secondary btn-sm" type="reset" style="margin-top: 32px;
-             	float: right;">선택삭제</button>
-			<button type="button" class="btn btn-secondary btn-sm" type="submit" style="margin-top: 32px;
-             	float: right; margin-right: 20px"><a href="/MoHang/admin/AdminNoticeInsertFormAction.do">글쓰기</a></button>
+             float: right;">선택삭제</button>
 		</div>
 		
-	</div>
-</div>
+		</div>
+		</div>
 		<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>

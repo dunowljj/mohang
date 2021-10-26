@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>
@@ -25,121 +24,107 @@
 </div>
 	
 	<div id="container-box1" style = "clear:both";>
-	<div id="container" style="padding-bottom: 60px;">
+	<div id="container">
 	
+	<p style="font-size: 30px; ">
+		<span style="color: #000000;font-size: 20px;">행사 예약 티켓 관리</span>
+	</p>
 	
-		<form class="d-flex" style=" float: left;">
-			<input class="form-control me-sm-2"type="text" placeholder="Search"    style=" width: auto;">
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">공지사항</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit"><a href="/MoHang/admin/AdminReview.do">리뷰</a></button>
-		</form>
-	
-	
-	
-	<table class="table table-hover" >
+	행사정보
+	<table class="table table-hover">
 	<colgroup>
-	    <col style="width:30px;">	 
-		 <col style="width:100px;">
-		 <col style="width:150px; ">
+		 <col style="width:30px;">
+		 <col style="width:150px;">
 		 <col style="width:50px;">
 		 <col style="width:70px;">
-		 <col style="width:30px;">	
-		 
+		 <col style="width:30px;">		 
 	</colgroup>
 		<thead>
 			<tr class="table-active">
-				<th scop="col"><input type="checkbox"></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이름</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">아이디</font></font></th>
+						style="vertical-align: inherit;">예약날짜</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">전화번호</font></font></th>
+						style="vertical-align: inherit;">가격</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">나이</font></font></th>
+						style="vertical-align: inherit;">예약현황</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">비고</font></font></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이서준</font></font></th>
 				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">서준123</font></font></a></td>
+						style="vertical-align: inherit;">12/18</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">무료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1짱나이</font></font></td>
+						style="vertical-align: inherit;">예약완료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>예약취소</button></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이용환</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">용환123</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">유료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">2짱나이</font></font></td>
+						style="vertical-align: inherit;">예약취소</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="row"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이상엽</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">상엽123</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">유료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">3짱나이</font></font></td>
+						style="vertical-align: inherit;">관람완료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이정준</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">정준123</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">유료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">4짱나이</font></font></td>
+						style="vertical-align: inherit;">예약완료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"><button>예약취소</button></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">최지혜</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">지혜123</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">무료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">5짱나이</font></font></td>
+						style="vertical-align: inherit;">예약취소</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			<tr>
-			    <th scop="col"><input type="checkbox"></th>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">김원형</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">원형123</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">010-0000-0000</font></font></td>
+						style="vertical-align: inherit;">유료</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">5짱나이</font></font></td>
+						style="vertical-align: inherit;">미관람</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>삭제</button></font></font></td>
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			
 		</tbody>
@@ -160,15 +145,9 @@
 			</ul>
 		</div>
 		
-		<div class="choice_cancel">
-			<button type="button" class="btn btn-secondary btn-sm" type="reset" style="margin-top: 32px;
-             	float: right;">선택삭제</button>
-			<button type="button" class="btn btn-secondary btn-sm" type="submit" style="margin-top: 32px;
-             	float: right; margin-right: 20px"><a href="/MoHang/admin/AdminNoticeInsertFormAction.do">글쓰기</a></button>
-		</div>
 		
-	</div>
-</div>
+		</div>
+		</div>
 		<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>
