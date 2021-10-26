@@ -15,9 +15,11 @@ import mohang.action.general.InformationUpdateFormAction;
 import mohang.action.general.LikeListAction;
 import mohang.action.general.LikeListEmptyAction;
 import mohang.action.general.ModalPrAction;
+import mohang.action.general.ModalPrAction2;
 import mohang.action.general.ReserveFormAction;
 import mohang.action.general.ReserveListAction;
 import mohang.action.general.ReviewListAction;
+import mohang.action.general.TicketDetailAction;
 
 @WebServlet("/general/*")
 public class GeneralController extends HttpServlet {
@@ -80,6 +82,20 @@ public class GeneralController extends HttpServlet {
 			}
     	}else if(command.equals("modal.do")) {
     		action = new ModalPrAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("modal2.do")) {
+    		action = new ModalPrAction2();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("ticketDetail.do")) {
+    		action = new TicketDetailAction();
     		try {
 				forward = action.execute(request, response);	
 			} catch (Exception e) {

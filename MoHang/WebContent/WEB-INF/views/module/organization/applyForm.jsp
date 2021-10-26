@@ -7,10 +7,6 @@
 <title>Organization Apply Form</title>
 
 <link href="../resources/css/organization.css" rel="stylesheet">
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-	crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -53,7 +49,6 @@
 			<!-- applyForm -->
 
 			<div class="btnPage">
-			
 				<input class="btn btn-primary btn-sm" type="submit" value="제출">
 				&nbsp&nbsp&nbsp&nbsp
 				<input class="btn btn-secondary btn-sm" type="reset" value="취소">

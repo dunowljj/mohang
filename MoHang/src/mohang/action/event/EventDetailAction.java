@@ -1,23 +1,19 @@
-package mohang.action.general;
+package mohang.action.event;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import mohang.action.Action;
 import mohang.action.ActionForward;
-import mohang.service.GeneralService;
 
-public class ModalPrAction implements GeneralAction {
+public class EventDetailAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ActionForward forward = new ActionForward();
-		GeneralService service = GeneralService.getInstance();
 		
-//		forward.setPath("/WEB-INF/views/module/general/ticketDetail.jsp");
-		forward.setPath("/WEB-INF/views/module/general/reserveCancel.jsp");
 		forward.setRedirect(false);
-
+		forward.setPath("/WEB-INF/views/module/event/eventDetail.jsp");
 		return forward;
 	}
-
 }

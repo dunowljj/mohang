@@ -46,7 +46,7 @@
 					<tr class="tr1">
 						<td class="tbname">행사기간</td>
 						<td class="tbinput">
-							<span class="goLeft"><input type="text" class="gray" id="datepicker1" > 
+							<span class="goLeft"><input type="text" class="gray" id="fromDate" > 
 							~ <input type="text" class="gray" id="toDate" > </span>
 						</td>
 					</tr>
