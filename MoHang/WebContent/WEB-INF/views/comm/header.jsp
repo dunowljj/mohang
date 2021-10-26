@@ -9,26 +9,20 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/slick.css" />
 <link rel="stylesheet" type="text/css" href="../resources/css/slick-theme.css" />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<!-- <script type="text/javascript" src="../resources/js/jquery.js"></script> -->
-
- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
-
-
-
+<script type="text/javascript" src="../resources/js/jquery.js"></script>
 <script type="text/javascript" src="../resources/js/slick.js"></script>
-
 <!-- 달력 -->
+
 <script>
 	var now = new Date(); // 현재 날짜 및 시간
 	var year = now.getFullYear(); // 연도
 	var month = now.getMonth() + 1; // 월
 	var lastDate = new Date(year, month, 0).getDate();
 	$(function() {
-		document.getElementById("month").innerHTML = '<em>' + year + '년</em>'
+		if(document.getElementById('month')){
+		document.getElementById("month").innerHTML = '<em>' + year + '년</em>';
 				+ '<em>' + month + '월</em>';
+				
 		document.getElementById("day").innerHTML = html;
 		var html = '<ul>';
 		for (var i = 1; i <= lastDate; i++) {
@@ -63,8 +57,7 @@
 							$('input[name=year]').val(year);
 							$('input[name=month]').val(month);
 						})
-		$('#year_next')
-				.click(
+		$('#year_next').click(
 						function() {
 							if (month == 12) {
 								month = 0;
@@ -87,11 +80,8 @@
 							$('input[name=year]').val(year);
 							$('input[name=month]').val(month);
 						})
-		$(".button").click(function() {
-			$("#myPage1").toggle();
-
-		});
-
+	
+		}
 	})
 </script>
 
@@ -203,5 +193,18 @@
 
 		</div>
 	</nav>
+<script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
+<script type="text/javascript">
+//마이페이지 다운 이벤트
+$(document).click(function(e) {
+	
+	if($(e.target).attr('src')!='../resources/images/button.png'){
+		$("#myPage1").css('display','none');
+	}
+	if($(e.target).attr('src')=='../resources/images/button.png'){
+		$("#myPage1").toggle();
+	}
+})
 
+</script>
 </html>
