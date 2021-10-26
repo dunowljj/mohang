@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 	.applyPage{
-	
+	margin-top: 180px;
 	width: 100%;
 	
 	}
@@ -28,13 +28,14 @@
 		
 	}
 	
-	tr{
-	height: 50px;
+	.tr1{
+		height: 70px;
 	}
 	
 	.tb{
 	width: 100%;
 	text-align: center;
+	height:300px;
 	margin-top:30px;
 	border-top: #808080 solid 1px;
 	padding-bottom:30px;
@@ -44,20 +45,21 @@
 	width: 150px;
 	border-right: #808080 solid 1px;
 	margin: 5px 5px 0px 5px;
-	padding-left:10px;
+	padding-left:20px;
 	text-align: left;
 	}
 	
 	.form-control{
-	width: 300px;
+	width: 40%;
 	height: 30px;
 	margin-left:10px;
 	}
 	
 	.btn{
 	margin: 0 auto;
-	width:90px;
-	height:30px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
 	}
 	
 	.btnPage{
@@ -71,27 +73,23 @@
 	div{
 	margin-top: 20px;
 	}
-	
-	.half{
-	width:150px;
-	}
-	
+
 	.gray{
     height: 30px;
-	border: 1px solid #ced4da;
+	border: 1.5px solid #ced4da;
     appearance: none;
     border-radius: 0.25rem;
     font-size: 15px;
     
 	}
 	
-	.aa{
+	.goLeft{
 	position: relative;
-    left: -30px;
+    left: -300px;
     }
 	.bb{
 	position: relative;
-    left: -315px;
+    left: -850px;
     }
     
     .textarea{
@@ -100,11 +98,27 @@
     font-size: 13px;
     padding:10px;
     position: relative;
-    left: -10px;
+    left: -30px;
     
     }
     
     .tdLength{
-    width:350px;
+    width:400px;
     }
    
+  	.tbinput{
+  	padding-left:10px;
+  	}
+  	
+   #small{
+   width:35%;
+   }
+      #small2{
+   width:15%;
+   }
+   
+   #e_priceSmall{
+   width:15%;
+   }
+   
+  

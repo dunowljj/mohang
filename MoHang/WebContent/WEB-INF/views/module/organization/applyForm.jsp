@@ -33,19 +33,19 @@
 					<tr>
 						<td class="tbname">단체명</td>
 						<td class="tbinput">
-							<input type="text" class="form-control" name="o_name"placeholder="ex) 우리강산푸르게">
+							<input type="text" class="form-control aa" name="o_name"placeholder="ex) 우리강산푸르게">
 						</td>
 					</tr>
 					<tr>
 						<td class="tbname">단체홈페이지</td>
 						<td class="tbinput">
-							<input type="text" class="form-control" name="o_homepage"placeholder="ex) www.green.org">
+							<input type="text" class="form-control aa" name="o_homepage"placeholder="ex) www.green.org">
 						</td>
 					</tr>
 					<tr>
 						<td class="tbname">단체전화번호</td>
 						<td class="tbinput">
-							<input type="text" class="form-control" name="o_phonenumber"placeholder="ex) 02-0000-0000">
+							<input type="text" class="form-control aa" name="o_phonenumber"placeholder="ex) 02-0000-0000">
 						</td>
 					</tr>
 				</table>

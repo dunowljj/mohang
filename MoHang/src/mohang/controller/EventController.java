@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import mohang.action.Action;
 import mohang.action.ActionForward;
+import mohang.action.event.ApplyListAction;
+import mohang.action.event.InsertFormAction;
 
 /**
  * Servlet implementation class Eventcontroller
@@ -35,8 +37,22 @@ public class EventController extends HttpServlet {
 		Action action = null;
 		ActionForward forward = null; 
 		
-		
-		
+	
+		if(command.equals("insertForm.do")) {
+			action = new InsertFormAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else if(command.equals("applyList.do")) {
+			action = new ApplyListAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		} 
 		 
 		
 		if(forward != null) {
