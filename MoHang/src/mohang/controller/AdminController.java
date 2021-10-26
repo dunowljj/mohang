@@ -11,7 +11,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import mohang.action.Action;
 import mohang.action.ActionForward;
+import mohang.action.admin.AdminApproveAction;
 import mohang.action.admin.AdminMainAction;
+import mohang.action.admin.AdminManagementAction;
+import mohang.action.admin.AdminNoticeAction;
+import mohang.action.admin.AdminNoticeInsertFormAction;
+import mohang.action.admin.AdminReservationTicketManagementAction;
+import mohang.action.admin.AdminReviewManagementAction;
 import mohang.action.main.MainAction;
 
 
@@ -38,7 +44,50 @@ public class AdminController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+    	}else if(command.equals("AdminApprove.do")) {
+    		action = new AdminApproveAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminManagement.do")) {
+    		action = new AdminManagementAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminReservationTicket.do")) {
+    		action = new AdminReservationTicketManagementAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminNotice.do")) {
+    		action = new AdminNoticeAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminReview.do")) {
+    		action = new AdminReviewManagementAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminNoticeInsertForm.do")) {
+    		action = new AdminNoticeInsertFormAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
     	}
+    	
     	
     	if(forward !=null) {
     		if(forward.isRedirect()) {
