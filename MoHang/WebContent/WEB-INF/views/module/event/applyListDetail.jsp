@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
-<div id="container-box1">
-	<div id="container">
-	
-	
-	
-	
-	
+	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+	<div id="container-box1">
+		<div id="container">
+		
+		
+		
 		</div>
-</div>
-<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
+	</div>
+	<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>

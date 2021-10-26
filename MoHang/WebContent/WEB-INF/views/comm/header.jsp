@@ -9,8 +9,17 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/slick.css" />
 <link rel="stylesheet" type="text/css" href="../resources/css/slick-theme.css" />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<script type="text/javascript" src="../resources/js/jquery.js"></script>
+<!-- <script type="text/javascript" src="../resources/js/jquery.js"></script> -->
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
+
+
+
 <script type="text/javascript" src="../resources/js/slick.js"></script>
+
 <!-- 달력 -->
 <script>
 	var now = new Date(); // 현재 날짜 및 시간

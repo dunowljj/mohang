@@ -101,21 +101,18 @@ $(function() {
     $(document).ready(function(){
     	$("#e_priceCheck").change(function(){
     		if($("#e_priceCheck").is(":checked")){
-    			$("#e_price").val("0")
+    			$("#e_priceSmall").val("0")
     		}
-
     	});
-
     });
     
     //무료클릭시 0으로 바뀌고 + 비활성화되게하는거. 
     function checkDisable(frm)
     {
         if( frm.e_priceCheck.checked == true ){
-    	   frm.e_price.disabled = true;
-    	} else 
-    	{
-    	   frm.e_price.disabled = false;
+    	   frm.e_priceSmall.disabled = true;
+    	} else {
+    	   frm.e_priceSmall.disabled = false;
     	}
     }
     
