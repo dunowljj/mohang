@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Main</title>
 </head>
 <head>
 <meta charset="utf-8" />
@@ -12,7 +12,6 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>Freelancer - Start Bootstrap Theme</title>
 
 </head>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
@@ -60,7 +59,7 @@
 <div id="container-box">
 	<div id="container">
 		<div class="month_event_box">
-		<h2>이달의 행사 일정</h2>
+		<p class="title">이달의 행사 일정</p>
 		<form action="" method="post" id="year_monthform">
 			<input type="hidden" name="year" value="" >
 			<input type="hidden" name="month" value="" >
@@ -166,7 +165,7 @@
 			</div>
 		</form>
 		</div>
-		<h3>추천 행사</h3>
+		<p class="title">추천 행사</p>
 		<div class="slider-div">
 			<div class="eventbox">
 				<div class="eventbox_in">
@@ -274,7 +273,7 @@
 				</div>
 			</div>
 		</div>
-		<h3>베스트 행사</h3>
+		<p class="title">베스트 행사</p>
 		<div class="slider-div">
 			<div class="eventbox">
 				<div class="eventbox_in">

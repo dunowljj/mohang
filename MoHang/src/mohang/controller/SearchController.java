@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.main.MainAction;
+import mohang.action.search.EventSearchAction;
 
 
 @WebServlet("/Search/*")
@@ -27,14 +28,33 @@ public class SearchController extends HttpServlet {
     	String command = requestURI.substring(contextPath.length()+8);
     	Action action = null; 
     	ActionForward forward = null;
+    	if(command.equals("eventsearch.do")) {
+    		action = new EventSearchAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}
+    	
+    	if(forward !=null) {
+    		if(forward.isRedirect()) {
+    			response.sendRedirect(forward.getPath());
+    		}else {
+    			RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
+    			dispatcher.forward(request, response);
+    		}
+    	}
     	
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
 	}
 
 }
