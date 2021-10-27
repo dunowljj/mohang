@@ -10,7 +10,7 @@ public class AdminNoticeInsertFormAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
+		System.out.println("test");
 	    ActionForward forward = new ActionForward();
 		
 		forward.setRedirect(false);

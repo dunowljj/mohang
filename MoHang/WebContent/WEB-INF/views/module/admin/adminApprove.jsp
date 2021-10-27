@@ -23,7 +23,7 @@
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 </div>
 	
-	<div id="container-box1" style = "clear:both";>
+	<div id="container-box1" style = "clear:both;">
 	<div id="container">
 	
 	<p style="font-size: 30px; ">

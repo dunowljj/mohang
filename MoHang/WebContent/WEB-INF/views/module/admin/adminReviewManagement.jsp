@@ -31,9 +31,9 @@
 		<form class="d-flex" style=" float: left;">
 			<input class="form-control me-sm-2"type="text" placeholder="Search"    style=" width: auto;">
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">공지사항</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">리뷰</button>
 		</form>
+		<a id="btn btn-secondary my-2 my-sm-02" class="btn_1" >공지사항</a>&nbsp;&nbsp;&nbsp;
+		<a id="btn btn-secondary my-2 my-sm-03" class="btn_1" href="/MoHang/admin/AdminReview.do" style ="color:red;"> 리뷰</a>
 	
 	
 	

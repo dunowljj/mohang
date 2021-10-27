@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html{
-	background-color : grey;
+	
 }
 
 #admin_main1 li{
@@ -27,19 +27,19 @@ nav{
 }
 .aaaa{
 	    display: inline-block;
-	    padding-left : 50px;
+	    padding-left : 100px;
 }
 .aaaa a{
 	clear:both;
 }
 
 #admin_main2_1{
-	text_aling : center;
+	text-align : center;
 }
 
 .bbbb{
 	display: inline-block;
-	padding-left : 50px;
+	padding-left : 100px;
 }
 
 

@@ -23,10 +23,18 @@
 </nav> 
 <div id = "admin_main2">
 <div id="admin_main2_1">
-		<div class='aaaa'>
-			<a href = "/MoHang/admin/AdminApprove.do"><img src="../resources/images/빈하트임티.png" alt="테스트입니다" width="200" height="200" /></a>
-		<div>행사반려/승인</div>
-		</div>
+	<div class='aaaa'>
+		<a href = "/MoHang/admin/AdminApprove.do">
+			<div>
+				<box>
+					<span>행사반려/승인</span>
+				</box>
+			</div>
+				<box>
+					<img src="../resources/images/빈하트임티.png" alt="테스트입니다" width="200" height="200" />
+				</box>
+		</a>
+	</div>
 		<div class='aaaa'>
 			<a href = "/MoHang/admin/AdminReservationTicket.do"><img src="../resources/images/깃임티.png" alt="테스트입니다" width="200" height="200" /></a>
 		<div>티켓예매</div>
