@@ -9,7 +9,7 @@
 	border-bottom: #808080 solid 2px;
 	}
 	.subsubTitle{
-	margin-top: 10px;
+	margin-top: 20px;
 	color: #400080;
 	}
 	
@@ -17,20 +17,20 @@
 	width: 100%;
 	border: #808080 solid 1px;
 	border-radius: 10px;
+	margin-top: 20px;
 	}
 	
 	.titleName{
 	margin-top: 20px;
 	margin-left: 20px;
-	
+	color: #400080;
 	}
 	
 
-
-	
 	.row{
 	display:flex;
 	}
+	
 	
 	.r_title{
 	flex:4;
@@ -41,6 +41,8 @@
 	.r_content{
 	flex:10;
 	padding: 10px 10px;
+	position: relative;
+    left: 10px;
 	}
 	
 	.float{
@@ -53,6 +55,7 @@
 	
 	.rowBox{
 	display:flex;
+	border-top: #808080 solid 2px;
 	}
 	.rowBox1{
 	flex:7;
@@ -61,18 +64,38 @@
 	flex:5;
 	}
 	
+	
 	.statisticsBox{
-	display:flex;
+	border-top: #808080 solid 2px;
 	}
+	.s_row{
+	display:flex;
+	width: 100%;
+	}
+
 	.s_title{
-	flex:3;
+	flex:2.25;
 	text-align: center;
 	border-right: #808080 solid 2px;
 	padding: 10px 0px;
+	vertical-align: middle;
 	}
 	.s_content{
 	flex:15;
 	padding: 10px 10px;
+	position: relative;
+    left: 10px;
+	}
+	
+	.btnPage{
+	width:30%;
+	margin: 0 auto;
+	}
+	
+	.btn{
+	width:100%;
+	height:40px;
+	margin: 30px;
 	}
 	
 	

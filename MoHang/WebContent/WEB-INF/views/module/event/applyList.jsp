@@ -6,37 +6,30 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <style>
 	*{font-family: 'Jua', sans-serif;}
+	
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../resources/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
-	<div id="header_nav">
-		<ul>
-			<li><a href="#">전체</a></li>
-			<li><a href="#">사업/창업</a></li>
-			<li><a href="#">IT/개발</a></li>
-			<li><a href="#">마케팅/홍보</a></li>
-			<li><a href="#">디자인/기획</a></li>
-			<li><a href="#">문화/예술</a></li>
-			<li><a href="#">취미/생활</a></li>
-			<li><a href="#">건강/의료</a></li>
-			<li><a href="/MoHang/Review/ReviewList.do">리뷰게시판</a></li>
-		</ul>
-	</div>
-	<div id="container-box1">
+
+
+
+<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+
+	
+	<div id="container-box1" style = "clear:both" >
 	<div id="container">
 	
-	<p style="font-size: 30px; ">
-		<span style="color: #000000;font-size: 20px;">리뷰게시판</span>
+	<p style="font-size: 30px; margin-top:150px;">
+		<span style="color: #000000;font-size: 20px;">My 행사 리스트</span>
 	</p>
 	
-	<table class="table table-hover">
+	<table class="table table-hover" >
 	<colgroup>
 		 <col style="width:30px;">
 		 <col style="width:150px;">
@@ -49,13 +42,13 @@
 				<th scope="col"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">번호</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">제목</font></font></th>
+						style="vertical-align: inherit;">행사제목</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">작성자</font></font></th>
+						style="vertical-align: inherit;">신청날짜</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">작성 날짜</font></font></th>
+						style="vertical-align: inherit;">진행 상황</font></font></th>
 				<th scope="col"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">조회수</font></font></th>
+						style="vertical-align: inherit;">비고</font></font></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -63,106 +56,63 @@
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">1</font></font></th>
 				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">바보</font></font></a></td>
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">김원형</font></font></td>
+						style="vertical-align: inherit;">12/17</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">2021.10.22</font></font></td>
+						style="vertical-align: inherit;">승인대기</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">999999999999999</font></font></td>
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertForm.do"><button>수정</button></a></font></font></td>
 			</tr>
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">2</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">멍청</font></font></td>
+						style="vertical-align: inherit;">~행사입니다</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">김원형</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">2021.10.22</font></font></td>
+						style="vertical-align: inherit;">승인대기</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">9</font></font></td>
+						style="vertical-align: inherit;"><button>수정</button></font></font></td>
 			</tr>
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">3</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">행사2입니다</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">심사중</font></font></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">4</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">여행을 우리 가봅시다</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">승인완료</font></font></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">5</font></font></th>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">여행을 우리 또 가봅시다</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
+						style="vertical-align: inherit;">반려</font></font></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"></font></font></td>
 			</tr>
-			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">6</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-			</tr>
-			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">7</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-			</tr>
-			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">8</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-			</tr>
-			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">9</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-			</tr>
-			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">10</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></td>
-			</tr>
+			
 		</tbody>
 		</table>
 

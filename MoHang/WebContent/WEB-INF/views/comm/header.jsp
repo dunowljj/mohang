@@ -157,8 +157,8 @@
          </form>
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">단체정보신청</a></li>
-               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">신청
+               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/MoHang/organization/applyForm.do">단체정보신청</a></li>
+               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/MoHang/event/applyList.do">신청
                      리스트확인</a></li>
             </ul>
             <ul class="nav-loginbar">
@@ -174,10 +174,10 @@
                   <ul>
                      <li>xxx님</li>
                      <li><a href="#">관심있는 행사</a></li>
-                     <li><a href="#">단체 정보 신청</a></li>
-                     <li><a href="#">행사 신청</a></li>
-                     <li><a href="#">my 행사 리스트</a></li>
-                     <li><a href="#">결과 분석 그래프</a></li>
+                     <li><a href="/MoHang/organization/applyForm.do">단체 정보 신청</a></li>
+                     <li><a href="/MoHang/event/insertForm.do">행사 신청</a></li>
+                     <li><a href="/MoHang/event/applyList.do">my 행사 리스트</a></li>
+                     <li><a href="/MoHang/event/statisticsListDetail.do">결과 분석 그래프</a></li>
                      <li><a href="#">1:1 채팅</a></li>
                      <li><a href="#">예약확인</a></li>
                      <li><a href="#">리뷰 작성 및 확인</a></li>
