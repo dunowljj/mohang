@@ -90,30 +90,93 @@ $.fn.center = function () {
 	this.css('left', Math.max(0,(($(window).width()-$(this).outerWidth())/2) + $(window).scrollLeft())+'px'); 
 	return this; 
 } 
-/*모달 활성화 및 팝업 활성화*/ 
-function wrapWindowByMask (){
-	var maskHeight = $(document).height(); 
-	var maskWidth = $(window).width(); 
-	$('#mask').css({'width':maskWidth, 'height':maskHeight});
+/*pwUp modal*/ 
+function pwUp_wrapWindowByMask (){
+	var  pwUp_maskHeight = $(document).height(); 
+	var  pwUp_maskWidth = $(window).width(); 
+	$('#mask').css({'width': pwUp_maskWidth, 'height': pwUp_maskHeight});
 	$('#mask').fadeTo(10,0.8); 
-	$('.ModalPopup').show(); 
-	$('.ModalPopup').center(); 
+	$('.pwUp_ModalPopup').show(); 
+	$('.pwUp_ModalPopup').center();
+	$('#wrap').attr('overflow', 'hidden');
 }
-function unwrapWindowByMask (){
-	$('#mask').fadeOut(); 
-	$('.ModalPopup').hide(); 
+function pwUp_unwrapWindowByMask (){
+	$('#mask').fadeOut();
+	$('.pwUp_ModalPopup').hide(); 
 }
+
 /*버튼 클릭시 위 함수 콜*/ 
 $(function () { 
-	$('.openMask').click(function(e) {
+	$('.pwUp_openMask').click(function(e) {
 		e.preventDefault();
-		wrapWindowByMask(); 
+		pwUp_wrapWindowByMask(); 
 	});
 });
 $(function(){
-	$('.close-area').click(function(e){
+	$('.pwUp_close-area').click(function(e){
 		e.preventDefault();
-		unwrapWindowByMask();
+		pwUp_unwrapWindowByMask();
+	});
+	
+});
+/*cancel modal*/ 
+function cancel_wrapWindowByMask (){
+	var cancel_maskHeight = $(document).height(); 
+	var cancel_maskWidth = $(window).width(); 
+	$('#mask').css({'width':cancel_maskWidth, 'height':cancel_maskHeight});
+	$('#mask').fadeTo(10,0.8); 
+	$('.cancel_form_modal').show(); 
+	$('.cancel_form_modal').center();
+//	$('#wrap').attr('overflow', 'hidden');
+}
+function cancel_unwrapWindowByMask (){
+	$('#mask').fadeOut(); 
+	$('.cancel_form_modal').hide(); 
+}
+/*버튼 클릭시 위 함수 콜*/ 
+$(function () { 
+	$('.cancel_openMask').click(function(e) {
+		e.preventDefault();
+		cancel_wrapWindowByMask(); 
+	});
+});
+$(function(){
+	$('.cancel_close-area').click(function(e){
+		e.preventDefault();
+		cancel_unwrapWindowByMask();
+	});
+	
+});
+//ticket modal
+function ticket_wrapWindowByMask (){
+	var ticket_maskHeight = $(document).height(); 
+	var ticket_maskWidth = $(window).width(); 
+	$('#mask').css({'width':ticket_maskWidth, 'height':ticket_maskHeight});
+	$('#mask').fadeTo(10,0.8); 
+	$('.ticket_ModalPopup').show(); 
+	$('.ticket_ModalPopup').center();
+//	$('#wrap').attr('overflow', 'hidden');
+}
+function ticket_unwrapWindowByMask (){
+	$('#mask').fadeOut(); 
+	$('.ticket_ModalPopup').hide(); 
+}
+/*btn click fn call*/ 
+$(function () { 
+	$('.ticket_openMask').click(function(e) {
+		e.preventDefault();
+		ticket_wrapWindowByMask(); 
+	});
+});
+function unwrapAllMask(){
+	pwUp_unwrapWindowByMask();
+	cancel_unwrapWindowByMask();
+	ticket_unwrapWindowByMask();
+}
+$(function(){
+	$('#mask').click(function(e){
+		e.preventDefault();
+		unwrapAllMask()
 	});
 	
 });

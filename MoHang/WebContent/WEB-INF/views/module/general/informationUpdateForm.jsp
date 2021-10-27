@@ -12,7 +12,6 @@
 </head>
 <body>
 	<!-- 전체 랩 --> <div id="wrap"> 
-<!-- 	<body class='bod_bod'> -->
 	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/general-script.js"></script>
 	<div id="container-box1">
@@ -24,39 +23,16 @@
 						<h5>기본정보수정</h5><hr>
 					</div>
 					<br>
-			<!-- 		modal -->
-					<div id='modal' class="pw_update_modal_overlay">
-						<div class="ModalPopup">
-							<div id='pw_update_head'>
-							<b>비밀번호 변경</b>
-							</div>
-							<form action='' id="pw_update_form">
-								<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 현재 비밀번호'"
-									placeholder=' 현재 비밀번호'><br>
-								<div id="pw_update_small_title">
-								<span>새 비밀번호 설정</span>
-								</div>
-								<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 6자리 이상 문자,숫자,특수문자'"
-									placeholder=' 6자리 이상 문자,숫자,특수문자'><br>
-								<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 새 비밀번호 확인'"
-									placeholder=' 새 비밀번호 확인'><br>
-							</form>
-							<div id='pw_update_footer'>
-							<a class="close-area">취소하기</a>
-							<a><input type="submit" value='변경하기'></input></a>
-					        </div>
-				        </div>
-					</div>
-			<!-- 		modal end -->
+			
 					<div class="form_center">
 						<form action="" method="post" id='updateForm' enctype="multipart/form-data">
 							<a><img src='${pageContext.request.contextPath}/resources/images/프로필.png' alt='user_image'></a>
-							<input type="file" name="fname"><br>
+							<input type="file" name="fname" value=''><br>
 							이름 :
 							<br>
 							아이디 : 
 							<br>
-							비밀번호 : <button class="openMask" type="button">변경</button><br>
+							비밀번호 : <button class="pwUp_openMask" type="button">변경</button><br>
 							<div>
 							성별 :
 							  <input type="radio" id="male" name="gender" value="male" checked>
@@ -87,6 +63,28 @@
 			</div>
 		</div>
 	</div>
+<!-- 		modal -->
+<div class="pwUp_ModalPopup">
+	<div id='pw_update_head'>
+	<b>비밀번호 변경</b>
+	</div>
+	<form action='' id="pw_update_form">
+		<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 현재 비밀번호'"
+			placeholder=' 현재 비밀번호'><br>
+		<div id="pw_update_small_title">
+		<span>새 비밀번호 설정</span>
+		</div>
+		<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 6자리 이상 문자,숫자,특수문자'"
+			placeholder=' 6자리 이상 문자,숫자,특수문자'><br>
+		<input type='text' onfocus="this.placeholder=''" onblur="this.placeholder=' 새 비밀번호 확인'"
+			placeholder=' 새 비밀번호 확인'><br>
+	</form>
+	<div id='pw_update_footer'>
+	<a class="pwUp_close-area">취소하기</a>
+	<a><input type="submit" value='변경하기'></input></a>
+       </div>
+      </div>
+<!-- 		modal end -->
 	<div id="mask"></div>
 	</div>
 	<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>	

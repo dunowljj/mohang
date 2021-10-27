@@ -12,8 +12,16 @@ button{
     border-radius: 7px;
 }
 /* -------informationUpdateForm --------*/
+.reserve_form{
+	font-size : 22px;
+	height: 414px;
+}
 .form_center{
 	width : 100%;
+}
+.form_wrap{
+	line-height: 3;
+	font-size:22px;
 }
 .form_head{
     width: 46%;
@@ -36,41 +44,80 @@ button{
 .form_left{
 	width : 45%;
 	display: inline-block;
+	float:left;
 }
 .form_right{
 	width : 45%;
+	height: 414px;
 	display: inline-block;
+	height: 414px;
+    line-height: 1.5;
+}
+.form_right a{
+	magin : 3px 0;
 }
 .reserveList_table{
-/* 	width : 80%; */
     height: 400px;
 	margin : 0 auto;	
 }
-
-.img_reserveList img{
-	width: 120px;
-	height : 70px;
-}
-.reserveList_big{
-	width : 22.0%;
-}
-.reserveList_small{
-	width : 11.8%;
-}
-th.reserveList_small:first-child{
-	width : 10.0%;
-}
-/* 관리  */
-.reserveList_small2{
-	width : 9%;
-}
 .reserveList_table tr:first-child{
 	background-color: #E0ECF8;
+}
+.reserveList_table_head th{
+	text-align : center;
+}
+.reserveList_row1 td:not(:first-child){
+	height: 250px;
+}
+.reserveList_row1 td:first-child{
+	border-bottom: 1px solid gray;
+}
+.reserveList_row2 td{
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+.reserveList_h1{
+	width : 11.0%;
+/* }57.2 42.8 5.8 */
+}
+.reserveList_h2{
+    width: 28.8%;
+}
+.reserveList_h3, .reserveList_h4, 
+.reserveList_h5, .reserveList_h7{
+	width : 12.8%;
+}
+.reserveList_h6{
+	width : 11.8%;
+}
+.reserveList_h6, .reserveList_h7, 
+.reserveList_d6, .reserveList_d7{
 	text-align: center;
+}
+.reserveList_d1{
+    height: 350px;
+}
+.reserveList_d3, .reserveList_d4, .reserveList_d5{
+    text-align: center;
+}
+
+.img_reserveList img{
+	width: 130px;
+	height : 75px;
+}
+/* 관리  */
+.reserveList_d6 button{
+	margin: 7px 0;
+    border-radius: 5px;
+    width: 86px;
+    height: 34px;
 }
 .reserveList_table{
 	border-collapse:collapse;
 	background-color:#FAFAFA;
+}
+.reserveList_table th,td{
+	padding:5px 10px;
 }
 .like_event {
 	float : left;
@@ -171,6 +218,8 @@ th.reserveList_small:first-child{
 #reviewList_table{
 	width : 100%;
 }
+#reviewList_table button{
+}
 #reviewList_table th:first-child{
 	width : 6%;
 }
@@ -190,9 +239,10 @@ th.reserveList_small:first-child{
 #reviewList_table th:last-child{
 	width : 17%
 }
-#reviewList_table{
-/* 	margin-bottom : 100px; */
+tr.reserveList_table td:last-child{
+	text-align:center;	
 }
+
 .entire_reviewList{
     height: 450px;
 }
@@ -233,36 +283,6 @@ th.reserveList_small:first-child{
 	width: 49%;
     height: 73.5px;
 }
-/* .pw_update_modal_overlay{ */
-/* 	width: 100%; */
-/* 	height: 100%; */
-/* 	position: absolute; */
-/* 	left: 0; */
-/* 	top: 0; */
-/* 	display: none; */
-/* 	flex-direction: column; */
-/* 	align-items: center; */
-/* 	justify-content: center; */
-/* 	background: rgba(255, 255, 255, 0.25); */
-/* 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-/* 	backdrop-filter: blur(1.5px); */
-/* 	-webkit-backdrop-filter: blur(1.5px); */
-/* 	border-radius: 10px; */
-/* 	border: 1px solid rgba(255, 255, 255, 0.18); */
-/* 	padding-top: 20px; */
-/*     margin-bottom: 10px;  */
-/* } */
-/* #pw_update_modal{ */
-/*  	background: white; */
-/*     box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%); */
-/*     backdrop-filter: blur( 13.5px ); */
-/*     -webkit-backdrop-filter: blur( 13.5px ); */
-/*     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-/*  	width: 465px; */
-/*     height: 400px; */
-/*     position: relative; */
-/*     top: -100px; */
-/* } */
 #wrap { 
 	width: 100%;
 	min-height: 768px;
@@ -276,39 +296,19 @@ th.reserveList_small:first-child{
 	display: none;
 	border : 1px solid black;
 } 
-.ModalPopup {
+.pwUp_ModalPopup {
 	display: none; 
 	position: absolute; 
 	z-index: 10000; 
 	background: white;
     box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 466px;
+ 	
  	top: 219.5px;
     left: 421.5px;
     padding: 17px 0px;
     text-align: center;
-    width: 466px;
-}
-
-
-.ticket_modal_overlay{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: drop-shadow(1.5px);
-	-webkit-backdrop-filter: blur(1.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	padding-top: 20px;
-    margin-bottom: 10px; 
 }
 .ticket_modal::before{
         content: "";
@@ -348,9 +348,9 @@ th.reserveList_small:first-child{
         bottom: 0px;
 		filter: brightness(98%);
 	    z-index: 1;
-	    background: url("../images/steve2.jpg");
+	    background: url("../images/steve2_t.jpg");
 /* 	    background-color: rgba( 255, 255, 255, 0.5 ); */
-	    height: 230.39px;
+	    height: 261.39px;
     	margin-top: 64.78px;
     	background-image
     }
@@ -369,17 +369,8 @@ th.reserveList_small:first-child{
         margin-top: 296px;
 /* 	    background-color: rgba( 255, 255, 255, 0.5 ); */
     }
-.ticket_modal{
-    box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 1000px;
-    height: 360px;
-    position: relative;
-    top: -100px;
-    font-size: 22px;
-}
+
+
 /* .ticket_modal img{ */
 /* 	float:right; */
 /*     width: 66%; */
@@ -393,50 +384,46 @@ th.reserveList_small:first-child{
     padding-top:4px;
 }
 .ticket_content{
-    height: 66%;
+    height: 55%;
 }
 .ticket_footer{
-    height: 17%;
+    height: 53%;
 }	
 
 .ticket_wrap p{
 	opacity: 1;
 }
-.cancel_form_modal{
+.ticket_ModalPopup{
+	display:none;
+    position: absolute;
+	z-index: 10000; 
  	background: white;
     box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 1000px;
+    height: 460px;
+    top: -100px;
+    font-size: 22px;
+}
+.ticket_nano_title{
+	color: #498172;
+	font-size: 23px;	
+}
+.cancel_form_modal{
+    display:none;
+    position: absolute;
+	z-index: 10000; 
+ 	background: white;
+    box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
  	width: 730px;
     height: 908px;
-    position: relative;
+    
     top: 150px;
-}
-
-.cancel_modal_overlay{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: none;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(1.5px);
-	-webkit-backdrop-filter: blur(1.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	padding-top: 20px;
-    margin-bottom: 10px; 
-}
-.cancel_form_modal{
     padding: 10px;
     font-size:22px;
 }
+
 .cancel_form_modal div img{
     height: 100%;
     width: 100%;
@@ -478,3 +465,6 @@ th.reserveList_small:first-child{
     font-size: 22px;
     background: white;
 }
+
+
+
