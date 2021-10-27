@@ -12,51 +12,44 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.event.EventDetailAction;
-import mohang.action.event.InsertFormAction;
+import mohang.action.login.JoinAction;
+import mohang.action.login.LoginAction;
 
-@WebServlet("/event/*")
-public class EventController extends HttpServlet {
+@WebServlet("/Login/*")
+public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-
-    public EventController() {
+    public LoginController() {
         super();
     }
     
-    
-	public void doProcess(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String requestURI = request.getRequestURI(); 
+    public void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String requestURI = request.getRequestURI();
 		String contextPath = request.getContextPath();
-		
-		
-		String command = requestURI.substring(contextPath.length() +7); 
+		String command = requestURI.substring(contextPath.length() + 7);
 		Action action = null;
-		ActionForward forward = null; 
-		
-	
-		if(command.equals("insertForm.do")) {
-			action = new InsertFormAction();
+		ActionForward forward = null;
+		if (command.equals("login.do")) {
+			action = new LoginAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if(command.equals("EventDetail.do")) {
-			action = new EventDetailAction();
+		} else if(command.equals("join.do")) {
+			action = new JoinAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-		 
 		
-		if(forward != null) {
-			if(forward.isRedirect()) {
-				response.sendRedirect(forward.getPath()); 
-			}else {
-				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath()); 
+		if (forward != null) {
+			if (forward.isRedirect()) {
+				response.sendRedirect(forward.getPath());
+			} else {
+				RequestDispatcher dispatcher = request.getRequestDispatcher(forward.getPath());
 				dispatcher.forward(request, response);
 			}
 		}
@@ -71,4 +64,3 @@ public class EventController extends HttpServlet {
 	}
 
 }
-
