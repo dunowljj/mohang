@@ -174,7 +174,7 @@
 							<img src="../resources/images/하트.png" alt=""
 								style="width: 30px; height: 30px;">
 						</div>
-						<a href="#"><img src="" alt=""
+						<a href="/MoHang/event/EventDetail.do"><img src="" alt=""
 							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 					</div>
 					<div class="eventbox_context">

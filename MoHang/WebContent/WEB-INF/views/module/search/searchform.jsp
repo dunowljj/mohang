@@ -168,7 +168,16 @@
 			</div>
 			<div id="eventbox">
 				<div class="keywordbox">
-					<span>123</span>
+					<div id="keywordbox_in">
+						<div id="keywordtitlebox">
+							<span class="eventkeywordtitle">행사 인기 검색어</span>
+							<div style="display: inline-block;width: 80px;"></div>
+							<div id="keywordscroll">1 행사이름</div>
+						</div>
+						<div id="keywordraking">
+						
+						</div>
+					</div>
 				</div>
 				<div class="eventbox_in">
 					<div class="eventimg">
