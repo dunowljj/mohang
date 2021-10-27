@@ -13,7 +13,6 @@ import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.event.EventDetailAction;
 import mohang.action.event.InsertFormAction;
-import mohang.action.event.StatisticsListDetailAction;
 
 @WebServlet("/event/*")
 public class EventController extends HttpServlet {
@@ -38,13 +37,6 @@ public class EventController extends HttpServlet {
 	
 		if(command.equals("insertForm.do")) {
 			action = new InsertFormAction();
-			try {
-				forward = action.execute(request, response);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		} else if(command.equals("statisticsListDetail.do")) {
-			action = new StatisticsListDetailAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {

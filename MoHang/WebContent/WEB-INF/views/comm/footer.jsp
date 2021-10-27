@@ -12,7 +12,7 @@
 	<div id="Notice_container">
 		<div id="Notice">
 			<ul>
-				<li><a href="#">공지사항</a></li>
+				<li><a href="/MoHang/Notice/Notice.do">공지사항</a></li>
 				<li>|</li>
 				<li><a href="#">xxxxxxxxxxxxxxxxxxx</a></li>
 			</ul>
