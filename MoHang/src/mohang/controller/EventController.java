@@ -62,6 +62,7 @@ public class EventController extends HttpServlet {
       }
    }
 
+
    protected void doGet(HttpServletRequest request, HttpServletResponse response)
          throws ServletException, IOException {
       doProcess(request, response);
@@ -71,5 +72,7 @@ public class EventController extends HttpServlet {
          throws ServletException, IOException {
       doProcess(request, response);
    }
+
+
 
 }

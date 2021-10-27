@@ -162,8 +162,8 @@
                <li><a href="/MoHang/event/applyList.do">신청 리스트확인</a></li>
             </ul>
             <ul class="nav-loginbar">
-               <li><a href="#">로그인</a></li>
-               <li><a href="#">회원가입</a></li>
+               <li><a href="/MoHang/Login/login.do">로그인</a></li>
+               <li><a href="/MoHang/Login/join.do">회원가입</a></li>
             </ul>
             <div id="pro_box">
                <a href="#"><img src="../resources/images/프로필.png"></a>
