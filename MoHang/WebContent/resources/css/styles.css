@@ -11871,11 +11871,7 @@ html {
 	height: 230px;
 }
 
-.eventbox_in {
-	position: absolute;
-	width: 300px;
-	height: 230px;
-}
+
 
 .eventbox_img {
 	margin-top: 5px;
@@ -11956,6 +11952,7 @@ span {
 
 .event_box {
 	height: 400px;
+	
 }
 
 .event_inner {
@@ -12015,7 +12012,8 @@ span {
 	max-height: 200px;
 	height: 90px;
 	position: relative;
-	margin-top: 120px;
+	margin-top: 150px;
+	margin-bottom: 115px;
 }
 
 #searchform_in {
@@ -12104,3 +12102,73 @@ span {
 	float: right;
 }
 #mask { position:absolute; z-index:9000; background-color:#000; display:none; left:0; top:0; }
+.line{
+	width: 100%;
+    border: 1px solid #333;
+}
+.eventfieldtitle{
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 140px;
+    height: 35px;
+    
+}
+#eventtitlebox{
+    width: 64%;
+	border-bottom: 1px solid;
+    height: 40px;
+	margin-bottom: 30px;
+}
+.eventtitle{
+	font-size: 35px;
+    color: orange;
+    float: left;
+}
+.filter-box{
+    width: 290px;
+    float: right;
+    margin-top: 20px;
+}
+#eventbox{
+    height: 1000px;
+    max-height: 1600px;
+    width: 100%;
+}
+.eventimg{
+	float: left;
+}
+.eventbox_in{
+	width: 905px;
+	height: 205px;
+}
+.eventinformation{
+	float: left;
+    height: 200px;
+    border: 1px solid #e8e8e8;
+    width: 50%;
+    padding-left: 5px;
+}
+.information_1{
+    margin-top: 15px;
+}
+.information_2{
+	margin-bottom: 60px;
+    margin-top: 30px;
+}
+.information_3{
+}
+.eventprice{
+	font-size: 25px;
+    font-weight: 700;
+}
+.eventtitle_in{
+    font-size: 25px;
+    color: #333;
+}
+.keywordbox{
+	width: 420px;
+    height: 250px;
+    float: right;
+    border: 1px solid;
+}
