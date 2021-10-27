@@ -15,11 +15,11 @@
 <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
 
 
-<script src="${pageContext.request.contextPath}/resources/js/eventInsertForm.js" type="text/javascript"></script>
 
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+<script src="${pageContext.request.contextPath}/resources/js/eventInsertForm.js" type="text/javascript"></script>
 
 <div id="container-box1">
 	<div id="container">

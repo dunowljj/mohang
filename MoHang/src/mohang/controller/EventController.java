@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import mohang.action.Action;
 import mohang.action.ActionForward;
+import mohang.action.event.EventApplyListAction;
 import mohang.action.event.EventDetailAction;
 import mohang.action.event.InsertFormAction;
 import mohang.action.event.StatisticsListDetailAction;
@@ -50,7 +51,14 @@ public class EventController extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		} else if(command.equals("EventDetail.do")) {
+		} else if(command.equals("applyList.do")) {
+			action = new EventApplyListAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(command.equals("EventDetail.do")) {
 			action = new EventDetailAction();
 			try {
 				forward = action.execute(request, response);

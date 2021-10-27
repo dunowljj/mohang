@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 
-public class EventDetailAction implements Action{
+public class EventApplyListAction implements Action{
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
