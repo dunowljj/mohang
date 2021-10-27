@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/admin_review_detail.css">
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
@@ -29,7 +28,7 @@
 리뷰게시판
 <hr>
 <div class="star-ratings">
-	<div  class="star-ratings-fill-space-x-2-text-lg" :style="{ width: ratingToPercent + '%' }">
+	<div  class="star-ratings-fill-space-x-2-text-lg" style="{ width: ratingToPercent + '%' }">
 		<div class="div_none"></div><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
 		날짜    
 		[조회수]

@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- slick -->
+<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../resources/css/bootstrap.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="../resources/css/slick.css" />
 <link rel="stylesheet" type="text/css" href="../resources/css/slick-theme.css" />
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -20,8 +22,7 @@
    var lastDate = new Date(year, month, 0).getDate();
    $(function() {
       if(document.getElementById('month')){
-      document.getElementById("month").innerHTML = '<em>' + year + '년</em>';
-            + '<em>' + month + '월</em>';
+      document.getElementById("month").innerHTML = '<em>' + year + '년</em>' + '<em>' + month + '월</em>';
             
       document.getElementById("day").innerHTML = html;
       var html = '<ul>';
@@ -151,19 +152,18 @@
          <a class="navbar-brand" href="/MoHang/Main/MoHang.do"><img
             src="../resources/images/logo.png"
             style="width: 140px; height: 80p; background: black;"></a>
-         <form method="post" action="/MoHang/Search/eventsearch.do" class="event-search" >
+         <form method="post" action="/MoHang/search/eventsearch.do" class="event-search" >
             <i class="fas fa-search" id="search_img"></i>
              <input   class="eventus-input" id="einput" type="search">
          </form>
          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/MoHang/organization/applyForm.do">단체정보신청</a></li>
-               <li><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/MoHang/event/applyList.do">신청
-                     리스트확인</a></li>
+            <ul class="nav-eventbar">
+               <li><a href="/MoHang/organization/applyForm.do">단체정보신청</a></li>
+               <li><a href="/MoHang/event/applyList.do">신청 리스트확인</a></li>
             </ul>
             <ul class="nav-loginbar">
-               <li><a href="#">로그인</a></li>
-               <li><a href="#">회원가입</a></li>
+               <li><a href="/MoHang/Login/login.do">로그인</a></li>
+               <li><a href="/MoHang/Login/join.do">회원가입</a></li>
             </ul>
             <div id="pro_box">
                <a href="#"><img src="../resources/images/프로필.png"></a>

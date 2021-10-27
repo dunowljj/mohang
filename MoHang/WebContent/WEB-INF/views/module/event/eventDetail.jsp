@@ -7,6 +7,7 @@
 <link href="./resources/css/bootstrap.css" type="text/css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <style>
 	*{font-family: 'Jua', sans-serif;}
@@ -53,8 +54,8 @@
   <img src="../resources/images/행사1.jpg" style="float: left;" height="318">
   <div class="box">
   <div class="card bg-light mb-3" style="max-width: 21rem;">
-  <div class="card-header">전시회정보</div>
-  <div class="card-body">
+  <div class="card-header">전시회정보<div style="display: inline-block; padding-left: 210px;"><img src="../resources/images/빈하트.png" style="width: 20px; height: 20px;"></div></div>
+  <div class="card-body" style="padding: 2rem 1rem;">
     <p class="card-text">기간: 2021-10-14 ~ 2021-10-17
     <br>
    						시간: 10:00 ~ 18:00
@@ -79,10 +80,14 @@
 	<button type="button" class="btn btn-light">1:1 채팅문의</button>
 </div>
 </div>
-</div>
-	<div style="text-align: center;"><img src="../resources/images/행사2.jpg" class="absolute" width="300px" height="300px">
+<div style="margin-left: 320px; margin-top: 150px;"><img src="../resources/images/행사2.jpg" class="absolute" width="300px" height="300px">
 	<img src="../resources/images/행사3.jpg" class="absolute" width="300px" height="300px">
 	<img src="../resources/images/행사4.jpg" class="absolute" width="300px" height="300px"></div>
+	
+	<h1 style="font-size:30px; margin-top: 30px; margin-bottom: 13rem; margin-left: 320px;">
+		<span style="color: #000000;">행사정보를 입력하세요~!~!</span>
+	</h1>
+</div>
 <jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>

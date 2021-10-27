@@ -13,7 +13,7 @@ public class EventDetailAction implements Action{
 		ActionForward forward = new ActionForward();
 		
 		forward.setRedirect(false);
-		forward.setPath("/WEB-INF/views/module/event/applyList.jsp");
+		forward.setPath("/WEB-INF/views/module/event/eventDetail.jsp");
 		return forward;
 	}
 }
