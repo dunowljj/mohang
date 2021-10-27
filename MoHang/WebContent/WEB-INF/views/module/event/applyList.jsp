@@ -1,3 +1,5 @@
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,6 +9,9 @@
 <title>Insert title here</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="../resources/css/eventApplyList.css" rel="stylesheet">
+
 <style>
 	*{font-family: 'Jua', sans-serif;}
 	
@@ -14,12 +19,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../resources/css/bootstrap.css" rel="stylesheet" />
+
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
 
 
 
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+<script src="${pageContext.request.contextPath}/resources/js/applyList.js" type="text/javascript"></script> 
 
 	
 	<div id="container-box1" style = "clear:both" >
@@ -29,7 +37,7 @@
 		<span style="color: #000000;font-size: 20px;">My 행사 리스트</span>
 	</p>
 	
-	<table class="table table-hover" >
+	<table class="table table-hover" id="applyList">
 	<colgroup>
 		 <col style="width:30px;">
 		 <col style="width:150px;">
@@ -55,27 +63,286 @@
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">승인대기</font></font></div></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/insertForm.do"><button>수정</button></a></font></font></td>
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
 			</tr>
 			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+						</div>
+
+					</div>
+				</td>
+			</tr>
+	<!-- 아코디언  한덩어리 실험 -->
+	<tr>
+				<th scope="row"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">승인대기</font></font></div></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+						</div>
+
+					</div>
+				</td>
+			</tr>
+			
+				<tr>
+				<th scope="row"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">승인대기</font></font></div></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+						</div>
+
+					</div>
+				</td>
+			</tr>
+			
+				<tr>
+				<th scope="row"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">승인대기</font></font></div></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+						</div>
+
+					</div>
+				</td>
+			</tr>
+			
+				<tr>
+				<th scope="row"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">1</font></font></th>
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">승인대기</font></font></div></td>
+				<td><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+							<figure>
+								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+						
+						</div>
+
+					</div>
+				</td>
+			</tr>
+	
+			
+			
+			
+			
+			
+		<!-- 	<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">2</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">~행사입니다</font></font></td>
+				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~행사입니다</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">12/18</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">승인대기</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><button>수정</button></font></font></td>
+						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
 			</tr>
+				
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">3</font></font></th>
@@ -111,7 +378,7 @@
 						style="vertical-align: inherit;">반려</font></font></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;"></font></font></td>
-			</tr>
+			</tr> -->
 			
 		</tbody>
 		</table>

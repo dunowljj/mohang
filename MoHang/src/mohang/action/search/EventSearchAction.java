@@ -10,11 +10,12 @@ public class EventSearchAction implements Action {
 
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		   ActionForward forward = new ActionForward();
-			
-			forward.setRedirect(false);
-			forward.setPath("/WEB-INF/views/module/search/searchform.jsp");
-			return forward;
+		    ActionForward forward = new ActionForward();
+			String field=request.getParameter("field");
+			request.setAttribute("field", field);
+	    	forward.setRedirect(false);
+	    	forward.setPath("/WEB-INF/views/module/search/searchform.jsp");
+		    return forward;
 		}
 
 }

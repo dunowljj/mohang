@@ -15,7 +15,7 @@ import mohang.action.main.MainAction;
 import mohang.action.search.EventSearchAction;
 
 
-@WebServlet("/Search/*")
+@WebServlet("/search/*")
 public class SearchController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  

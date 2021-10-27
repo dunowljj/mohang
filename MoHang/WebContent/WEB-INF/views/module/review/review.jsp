@@ -5,14 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>
-	*{font-family: 'Jua', sans-serif;}
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
-<link href="../resources/css/bootstrap.css" rel="stylesheet" />
+
+
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
