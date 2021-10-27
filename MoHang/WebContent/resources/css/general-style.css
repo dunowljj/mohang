@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .general_wrapper{
 	width : 100%;
-    margin-top: 160px
+    margin-top: 160px;
+    height: 1184px;
 }
 button{
 	outline : 0;
@@ -193,7 +194,7 @@ th.reserveList_small:first-child{
 /* 	margin-bottom : 100px; */
 }
 .entire_reviewList{
-    height: 400px;
+    height: 450px;
 }
 #pw_update_modal{
 	width: 300px;
@@ -224,6 +225,7 @@ th.reserveList_small:first-child{
     display: inline-block;
     margin-top: 60px;
     padding: 30px 0px;
+    text-align: center;
 }
 #pw_update_footer input{
 	background-color:white;
@@ -231,36 +233,63 @@ th.reserveList_small:first-child{
 	width: 49%;
     height: 73.5px;
 }
-.pw_update_modal_overlay{
+/* .pw_update_modal_overlay{ */
+/* 	width: 100%; */
+/* 	height: 100%; */
+/* 	position: absolute; */
+/* 	left: 0; */
+/* 	top: 0; */
+/* 	display: none; */
+/* 	flex-direction: column; */
+/* 	align-items: center; */
+/* 	justify-content: center; */
+/* 	background: rgba(255, 255, 255, 0.25); */
+/* 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+/* 	backdrop-filter: blur(1.5px); */
+/* 	-webkit-backdrop-filter: blur(1.5px); */
+/* 	border-radius: 10px; */
+/* 	border: 1px solid rgba(255, 255, 255, 0.18); */
+/* 	padding-top: 20px; */
+/*     margin-bottom: 10px;  */
+/* } */
+/* #pw_update_modal{ */
+/*  	background: white; */
+/*     box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%); */
+/*     backdrop-filter: blur( 13.5px ); */
+/*     -webkit-backdrop-filter: blur( 13.5px ); */
+/*     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+/*  	width: 465px; */
+/*     height: 400px; */
+/*     position: relative; */
+/*     top: -100px; */
+/* } */
+#wrap { 
 	width: 100%;
-	height: 100%;
+	min-height: 768px;
+} 
+#mask { 
 	position: absolute;
-	left: 0;
+	left: 0; 
 	top: 0;
+	z-index: 9999;
+	background-color: #000;
 	display: none;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(1.5px);
-	-webkit-backdrop-filter: blur(1.5px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	padding-top: 20px;
-    margin-bottom: 10px; 
-}
-#pw_update_modal{
- 	background: white;
+	border : 1px solid black;
+} 
+.ModalPopup {
+	display: none; 
+	position: absolute; 
+	z-index: 10000; 
+	background: white;
     box-shadow: 0 6px 10px 0 rgb(10 30 108 / 40%);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
- 	width: 465px;
-    height: 400px;
-    position: relative;
-    top: -100px;
+ 	top: 219.5px;
+    left: 421.5px;
+    padding: 17px 0px;
+    text-align: center;
+    width: 466px;
 }
+
 
 .ticket_modal_overlay{
 	width: 100%;
@@ -379,10 +408,10 @@ th.reserveList_small:first-child{
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
- 	width: 930px;
-    height: 1350px;
+ 	width: 730px;
+    height: 908px;
     position: relative;
-    top: -100px;
+    top: 150px;
 }
 
 .cancel_modal_overlay{
@@ -391,13 +420,13 @@ th.reserveList_small:first-child{
 	position: absolute;
 	left: 0;
 	top: 0;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background: rgba(255, 255, 255, 0.25);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: drop-shadow(1.5px);
+	backdrop-filter: blur(1.5px);
 	-webkit-backdrop-filter: blur(1.5px);
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
@@ -416,10 +445,36 @@ th.reserveList_small:first-child{
     height: 42%;
 }
 .cancel_form_detail{
-	margin-top: 8px;
-	line-height: 1.67;
-	height: 40%;
+	margin-top: 10px;
+    line-height: 1.67;
+    height: 48%;
 }
-.cancel_form_btns a{
-	
+.cancel_form_btns a:first-child{
+	display: inline-block;
+	width: 49%;
+	height : 18%;
+	text-align:center;
+	font-size:22px;
+	height: 100%;
+}
+.cancel_form_btns a:last-child{
+	display: inline-block;
+	width: 49%;
+	height : 18%;
+	text-align:center;
+	font-size:22px;
+	padding-top: 26px;
+    padding-bottom: 46.5px;
+}
+
+.cancel_form_btns{
+	height:8.5%
+}
+.btn_cancel_go input{
+	outline: 0px;
+    border: 0px;
+    width:100%;
+    height:100%;
+    font-size: 22px;
+    background: white;
 }
