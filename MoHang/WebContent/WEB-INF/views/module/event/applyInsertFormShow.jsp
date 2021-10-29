@@ -9,7 +9,7 @@
 <title>Event Apply Form</title>
 
 
-<link href="../resources/css/eventInsertForm.css" rel="stylesheet">
+<link href="../resources/css/event.css" rel="stylesheet">
 
 
 

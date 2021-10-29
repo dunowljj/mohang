@@ -177,7 +177,7 @@
                      <li><a href="/MoHang/organization/applyForm.do">단체 정보 신청</a></li>
                      <li><a href="/MoHang/event/insertForm.do">행사 신청</a></li>
                      <li><a href="/MoHang/event/applyList.do">my 행사 리스트</a></li>
-                     <li><a href="/MoHang/event/statisticsListDetail.do">결과 분석 그래프</a></li>
+                     <li><a href="/MoHang/event/statisticsList.do">결과 분석 그래프</a></li>
                      <li><a href="#">1:1 채팅</a></li>
                      <li><a href="/MoHang/general/reserveList.do">예약확인</a></li>
                      <li><a href="/MoHang/general/reviewList.do">리뷰 작성 및 확인</a></li>
