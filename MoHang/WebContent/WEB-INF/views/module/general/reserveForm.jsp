@@ -5,12 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="${pageContext.request.contextPath}/resources/css/general-style.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/general-script.js"></script>
 
 <title>Insert title here</title>
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/general-script.js"></script>
 	<div id="container-box1">
 		<div id="container">
 			<div class="general_wrapper">
