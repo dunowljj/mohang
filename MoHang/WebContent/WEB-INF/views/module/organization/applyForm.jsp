@@ -19,7 +19,9 @@
 			<h3>단체정보 신청</h3>
 		</div>
 		<div class="subsubTitle">
+		<br>
 			<h6>행사를 신청하기 위해 단체정보를 입력하여 주세요 :)</h6>
+		<br>
 		</div>
 
 
@@ -47,7 +49,7 @@
 				</table>
 			</div>
 			<!-- applyForm -->
-
+			<br>
 			<div class="btnPage">
 				<input class="btn btn-primary btn-sm" type="submit" value="제출">
 				&nbsp&nbsp&nbsp&nbsp

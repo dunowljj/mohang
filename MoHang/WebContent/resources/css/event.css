@@ -70,9 +70,7 @@
 	width: 500px;;
 	}
 	
-	div{
-	margin-top: 20px;
-	}
+	
 
 	.gray{
     height: 30px;
@@ -85,7 +83,7 @@
 	
 	.goLeft{
 	position: relative;
-    left: -300px;
+    left: -280px;
     }
 	.bb{
 	position: relative;
@@ -120,5 +118,43 @@
    #e_priceSmall{
    width:15%;
    }
+      /*event/applyInsertFormshow.jsp */
+   	.s_tbname{
+	width: 55px;
+	border-right: #808080 solid 1px;
+	margin: 5px 5px 0px 5px;
+	padding-left:20px;
+	text-align: left;
+	}
+	
+	.s_tbcontent{
+	text-align: left;
+    padding-left: 20px;
+	}
    
+   
+   /* event/applyList.jsp */
+   .listArccodian{
+	margin: 0 auto;
+	}
+
+	.arccodianBox{
+
+	}
+
+	.imageSize{
+	width:70px;
+	height:70px;
+	}
+
+
+	.arccodianBox figure {
+    margin: 0 0 1rem;
+    float: left;
+    margin-right: 108px;
+	}
+
+	figcaption{
+	margin: 10px 0px 0px 10px;
+	}
   

@@ -7,7 +7,7 @@
 <title>Event Apply Form</title>
 
 
-<link href="../resources/css/eventInsertForm.css" rel="stylesheet">
+<link href="../resources/css/event.css" rel="stylesheet">
 
  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -28,7 +28,9 @@
 			<h3>행사 신청</h3>
 		</div>
 		<div class="subsubTitle">
+		<br>
 			<h6>주최할 행사의 상세내용을 입력하여 주세요 :)</h6>
+		<br>
 		</div>
 
 

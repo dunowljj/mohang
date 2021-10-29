@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 
 <link href="../resources/css/statistics.css" rel="stylesheet">
+
+<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 <script type="text/javascript"
 	src="https://www.gstatic.com/charts/loader.js"></script>
 <script
@@ -14,24 +16,26 @@
 	type="text/javascript"></script>
 </head>
 <body>
-	<jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 	<div id="container-box1">
 		<div id="container">
-		
-			<div class="page">
-				<div class="subT	itle">
+
+			<div class="statisticsPage">
+				<div class="subTitle">
 					<h3>'${event.e_name }' 결과 상세 분석</h3>
 				</div>
 				<div class="subsubTitle">
 					<br>
-					<h6>종료된 행사들의 결과 분석 통계를 확인 할 수 있습니다.</h6>
-					<h6>다음 행사 진행시 참고해 주세요 :)</h6>
-					
+					<h6>
+						종료된 행사들의 결과 분석 통계를 확인 할 수 있습니다.<br> 다음 행사 진행시 참고해 주세요 :)
+					</h6>
+
 				</div>
-				
-			<div class="result">
+
+				<div class="result">
 					<div class="titleName">
-						<h6><b>행사 상세 정보</b></h6>
+						<h6>
+							<b>행사 상세 정보</b>
+						</h6>
 					</div>
 
 					<div class="rowBox">
@@ -92,14 +96,19 @@
 					</div>
 					<!--행사상세정보-->
 
-					<br><br>
+					<br>
+					<br>
 					<div class="titleName">
-						<h6><b>결과 분석 통계</b></h6>
+						<h6>
+							<b>결과 분석 통계</b>
+						</h6>
 					</div>
 
 					<div class="statisticsBox">
 						<div class="s_row">
-							<div class="s_title">우리 행사에 <br>관심있는 고객</div>
+							<div class="s_title">
+								우리 행사에 <br>관심있는 고객
+							</div>
 							<div class="s_content">
 								<div class="row">
 									<div class="col-sm">조회수 |</div>
@@ -130,20 +139,17 @@
 						</div>
 					</div>
 				</div>
-				
-					<div class="btnPage">
-						<button type="button" class="btn btn-primary btn-sm" >엑셀로 보내기</button>
-					</div>
-				
+
+				<div class="btnPage">
+					<button type="button" class="btn btn-primary btn-sm">엑셀로
+						보내기</button>
+				</div>
 			</div>
-			
-			
-			
 		</div>
-		</div>
-	
+	</div>
 
 
-		<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
+
+	<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>

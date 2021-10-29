@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
-<link href="../resources/css/eventApplyList.css" rel="stylesheet">
+<link href="../resources/css/event.css" rel="stylesheet">
 
 <style>
 	*{font-family: 'Jua', sans-serif;}
@@ -27,7 +27,7 @@
 
 
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
-<script src="${pageContext.request.contextPath}/resources/js/applyList.js" type="text/javascript"></script> 
+<script src="${pageContext.request.contextPath}/resources/js/event.js" type="text/javascript"></script> 
 
 	
 	<div id="container-box1" style = "clear:both" >
@@ -68,7 +68,7 @@
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">12/17</font></font></td>
 				<td><div class="arrow"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></div></td>
+						style="vertical-align: inherit;" >승인대기</font></font></div></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
 			</tr>
