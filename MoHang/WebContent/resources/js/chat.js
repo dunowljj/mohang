@@ -10,6 +10,7 @@ $(document).ready(function(){
 			var day = 26;
 			var time;
 			
+			console.log(day +"," + date.getDate());
 			// 채팅 시간별로 나눠주기 위한 조건 
 			if(month == date.getMonth() && day == date.getDate()){
 				time = "<div class=\"message-data\"><span class=\"message-data-time\">" + date.getHours() +":"+date.getMinutes()+", " + "today" +"</span></div>";
