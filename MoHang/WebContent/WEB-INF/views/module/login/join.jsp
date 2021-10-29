@@ -76,33 +76,33 @@
          	 사업/창업
         </label>
   
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+        <label class="form-check-label" for="flexCheckChecked1">
       		IT/개발
         </label>
         
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+        <label class="form-check-label" for="flexCheckChecked2">
          	 마케팅/홍보
         </label>
         
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+        <label class="form-check-label" for="flexCheckChecked3">
           	디자인/기획
         </label>
         
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+        <label class="form-check-label" for="flexCheckChecked4">
          	 문화/예술
         </label>
         
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+        <label class="form-check-label" for="flexCheckChecked5">
          	 취미/생활
         </label>
         
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+        <label class="form-check-label" for="flexCheckChecked6">
           	건강/의료
         </label>
       </div>

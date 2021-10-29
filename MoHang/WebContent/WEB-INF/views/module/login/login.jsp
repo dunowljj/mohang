@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 <!-- 폰트 -->
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,8 +28,10 @@
 			<input type="password" class="form-control" id="floatingPassword"
 				placeholder="Password" style="width: 300px; height: 30px;"> <label for="floatingPassword"></label>
 		</div>
-			<button type="button" onclick="location.href='/MoHang/Main/MoHang.do'" class="btn btn-primary disabled" style="width: 150px;">로그인</button>
+			<button type="button" onclick="location.href='/MoHang/Main/MoHang.do'" class="btn btn-primary disabled" 
+			style="width: 150px;">로그인</button>
 			<div><button type="button" class="btn btn-warning" style="width: 150px; background-color: yellow;">카카오톡으로 로그인</button></div>
+
 	</div>
 	</div>
 	</div>

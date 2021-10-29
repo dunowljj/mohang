@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
+<title>MoHang?</title>
 
-<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
-<link href="../resources/css/bootstrap.css" rel="stylesheet" />
+<!-- <link href="../resources/css/bootstrap.min.css" rel="stylesheet" /> -->
+<!-- <link href="../resources/css/bootstrap.css" rel="stylesheet" /> -->
 </head>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 
@@ -67,95 +68,90 @@
 				<div class="eventbox">
 					<div class="eventbox_in">
 						<div class="eventbox_img">
-							<div class="heart">
-								<img src="../resources/images/빈하트.png" alt=""
-									style="width: 28px; height: 28px;">
-							</div>
-							<a href="#"><img src="" alt=""
+							<a href="#"><img src="../resources/images/행사5.jpg" alt=""
 								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 						</div>
+						<div class="heart">
+							<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
+						</div>
 						<div class="eventbox_context">
-							<span>날짜</span>
-							<p class="event_title">행사 제목</p>
+							<span>2021-10-08 ~ 2021-10-10</span>
+							<p class="event_title">서울캣쇼</p>
 						</div>
 						<div class="eventbox_context2">
-							<span class="price">가격</span>
+							<span class="price">20000원</span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox">
 					<div class="eventbox_in">
 						<div class="eventbox_img">
-							<div class="heart">
-								<img src="../resources/images/찬하트.png" alt=""
-									style="width: 30px; height: 30px;">
-							</div>
 							<a href="/MoHang/event/EventDetail.do"><img src="../resources/images/행사1.jpg" alt=""
 								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 						</div>
+						<div class="heart">
+								<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
+							</div>
 						<div class="eventbox_context">
-							<span>날짜: 2021-10-14 ~ 2021-10-17</span>
+							<span>2021-10-14 ~ 2021-10-17</span>
 							<p class="event_title">슬기로운 데이터 분석 생활</p>
 						</div>
 						<div class="eventbox_context2">
-							<span class="price">가격: 무료</span>
+							<span class="price">20000원</span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox">
 					<div class="eventbox_in">
 						<div class="eventbox_img">
-							<div class="heart">
-								<img src="../resources/images/빈하트.png" alt=""
-									style="width: 30px; height: 30px;">
-							</div>
-							<a href="#"><img src="" alt=""
+							<a href="#"><img src="../resources/images/행사6.jpg" alt=""
 								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 						</div>
+						<div class="heart">
+							<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
+						</div>
 						<div class="eventbox_context">
-							<span>날짜</span>
-							<p class="event_title">행사 제목</p>
+							<span>2021-10-12 ~ 2021-10-13</span>
+							<p class="event_title">외국인유학생 채용박람회</p>
 						</div>
 						<div class="eventbox_context2">
-							<span class="price">가격</span>
+							<span class="price">20000원</span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox">
 					<div class="eventbox_in">
 						<div class="eventbox_img">
-							<div class="heart">
-								<img src="../resources/images/빈하트.png" alt=""
-									style="width: 30px; height: 30px;">
-							</div>
-							<a href="#"><img src="" alt=""
+							<a href="#"><img src="../resources/images/행사7.jpg" alt=""
 								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 						</div>
+						<div class="heart">
+							<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
+						</div>
 						<div class="eventbox_context">
-							<span>날짜</span>
-							<p class="event_title">행사 제목</p>
+							<span>2021-10-14 ~ 2021-10-17</span>
+							<p class="event_title">2021년 제7회 더레저쇼 WITH 차박&캠핑카쇼</p>
 						</div>
 						<div class="eventbox_context2">
-							<span class="price">가격</span>
+							<span class="price">50000원</span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox">
 					<div class="eventbox_in">
 						<div class="eventbox_img">
-							<div class="heart">
-								<img src="../resources/images/빈하트.png" alt=""
-									style="width: 30px; height: 30px;">
-							</div>
-							<a href="#"><img src="" alt=""
+							<a href="#"><img src="../resources/images/행사8.jpg" alt=""
 								style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
 						</div>
+						<div class="heart">
+							<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
+						</div>
 						<div class="eventbox_context">
-							<span>날짜</span>
-							<p class="event_title">행사 제목</p>
+							<span>2021-11-04 ~ 2021-11-06</span>
+							<p class="event_title">제63회 프랜차이즈 창업박람회 SETEC</p>
 						</div>
 						<div class="eventbox_context2">
-							<span class="price">가격</span>
+							<span class="price">20000원</span>
 						</div>
 					</div>
 				</div>
@@ -167,19 +163,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/찬하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href=""><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사8.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-11-04 ~ 2021-11-06</span>
+						<p class="event_title">제63회 프랜차이즈 창업박람회 SETEC</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -188,19 +182,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/찬하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사1.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-14 ~ 2021-10-17</span>
+						<p class="event_title">슬기로운 데이터 분석 생활</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -209,19 +201,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/빈하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사5.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-08 ~ 2021-10-10</span>
+						<p class="event_title">서울캣쇼</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -230,19 +220,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/빈하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사6.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-12 ~ 2021-10-13</span>
+						<p class="event_title">외국인유학생 채용박람회</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -251,19 +239,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/빈하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사7.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-14 ~ 2021-10-17</span>
+						<p class="event_title">2021년 제7회 더레저쇼 WITH 차박&캠핑카쇼</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">50000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -275,19 +261,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/빈하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href="#"><img src="../resources/images/행사7.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-14 ~ 2021-10-17</span>
+						<p class="event_title">2021년 제7회 더레저쇼 WITH 차박&캠핑카쇼</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">50000</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -296,19 +280,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/찬하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사1.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-14 ~ 2021-10-17</span>
+						<p class="event_title">슬기로운 데이터 분석 생활</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -317,19 +299,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/빈하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사6.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-12 ~ 2021-10-13</span>
+						<p class="event_title">외국인유학생 채용박람회</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -338,20 +318,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-
-							<img src="../resources/images/하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사5.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-10-08 ~ 2021-10-10</span>
+						<p class="event_title">서울캣쇼</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
@@ -360,43 +337,17 @@
 			<div class="eventbox">
 				<div class="eventbox_in">
 					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/꽉찬하트.png" alt=""
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+						<a href=""><img src="../resources/images/행사8.jpg" alt="" style="width: 290px; height: 190px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
+					</div>
+					<div class="heart">
+						<img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;">
 					</div>
 					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
+						<span>2021-11-04 ~ 2021-11-06</span>
+						<p class="event_title">제63회 프랜차이즈 창업박람회 SETEC</p>
 					</div>
 					<div class="eventbox_context2">
-						<span class="price">가격</span>
-						<div class="none"></div>
-						<img class="view" src="../resources/images/눈.png"><span>0</span>
-					</div>
-				</div>
-			</div>
-			<div class="eventbox">
-				<div class="eventbox_in">
-					<div class="eventbox_img">
-						<div class="heart">
-							<img src="../resources/images/꽉찬하트.png" alt="">
-
-							<img src="../resources/images/빈하트.png" alt=""
-
-								style="width: 30px; height: 30px;">
-						</div>
-						<a href="#"><img src="" alt=""
-							style="width: 290px; height: 120px; border: 1px solid #333; margin-left: 4px; border-radius: 10px;"></a>
-					</div>
-					<div class="eventbox_context">
-						<span>날짜</span>
-						<p class="event_title">행사 제목</p>
-					</div>
-					<div class="eventbox_context2">
-						<span class="price">가격</span>
+						<span class="price">20000원</span>
 						<div class="none"></div>
 						<img class="view" src="../resources/images/눈.png"><span>0</span>
 					</div>
