@@ -24,20 +24,20 @@
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 </div>
 	
-	<div id="container-box1" style = "clear:both";>
+	<div id="container-box1" style = "clear:both; padding-top: 70px;">
 	<div id="container" style="padding-bottom: 60px;">
 	
 	
 		<form class="d-flex" style=" float: left;">
 			<input class="form-control me-sm-2"type="text" placeholder="Search"    style=" width: auto;">
 			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">공지사항</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">리뷰</button>
 		</form>
+		<a id="btn btn-secondary my-2 my-sm-02" class="btn_1" href= "/MoHang/admin/AdminNotice.do" style="text-decoration:none;">공지사항</a>&nbsp;&nbsp;&nbsp;
+		<a id="btn btn-secondary my-2 my-sm-03" class="btn_1" href="/MoHang/admin/AdminReview.do" style ="color:red; text-decoration:none;"> 리뷰</a>
 	
 	
 	
-	<table class="table table-hover" >
+	<table class="table table-hover"  style="margin-top: 25px;" >
 	<colgroup>
 	    <col style="width:30px;">	 
 		 <col style="width:100px;">

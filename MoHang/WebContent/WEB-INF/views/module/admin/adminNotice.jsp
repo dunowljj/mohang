@@ -15,29 +15,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 <link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
 <link href="../resources/css/bootstrap.css" rel="stylesheet" />
+
 </head>
+
+
 <body>
 
 <jsp:include page="/WEB-INF/views/comm/adminheader.jsp"></jsp:include>
+
 
 <div class ="dd" style= "display : none">	
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 </div>
 	
-	<div id="container-box1" style = "clear:both";>
+
+	<div id="container-box1" style = "clear:both; padding-top: 50px;">
 	<div id="container" style="padding-bottom: 60px;">
 	
 	
 		<form class="d-flex" style=" float: left;">
 			<input class="form-control me-sm-2"type="text" placeholder="Search"    style=" width: auto;">
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">공지사항</button>&nbsp;&nbsp;&nbsp;
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit"><a href="/MoHang/admin/AdminReview.do">리뷰</a></button>
+			<button class="btn btn-secondary my-2 my-sm-01" type="submit">Search</button>&nbsp;&nbsp;&nbsp;
 		</form>
+		<a id="btn btn-secondary my-2 my-sm-02" class="btn_1" style="color:red; text-decoration:none;">공지사항</a>&nbsp;&nbsp;&nbsp;
+		<a id="btn btn-secondary my-2 my-sm-03" class="btn_1" href="/MoHang/admin/AdminReview.do" style="text-decoration:none;"> 리뷰</a>
 	
 	
 	
-	<table class="table table-hover" >
+	<table class="table table-hover"    style= "margin-top: 45px;">
 	<colgroup>
 	    <col style="width:30px;">	 
 		 <col style="width:100px;">
@@ -161,10 +166,10 @@
 		</div>
 		
 		<div class="choice_cancel">
-			<button type="button" class="btn btn-secondary btn-sm" type="reset" style="margin-top: 32px;
+			<button type="cancel" class="btn btn-secondary btn-sm" type="reset" style="margin-top: 32px;
              	float: right;">선택삭제</button>
-			<button type="button" class="btn btn-secondary btn-sm" type="submit" style="margin-top: 32px;
-             	float: right; margin-right: 20px"><a href="/MoHang/admin/AdminNoticeInsertFormAction.do">글쓰기</a></button>
+			<button type="button" class="btn btn-secondary btn-sm" style="margin-top: 32px;
+             	float: right; margin-right: 20px;"><a href="/MoHang/admin/AdminNoticeInsertForm.do" style=" text-decoration:none;">글쓰기</a></button>
 		</div>
 		
 	</div>
