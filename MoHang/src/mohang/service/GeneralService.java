@@ -1,6 +1,7 @@
 package mohang.service;
 
 import mohang.dao.GeneralDAO;
+import mohang.domain.General;
 
 public class GeneralService {
 	private static GeneralService service = new GeneralService();

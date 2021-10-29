@@ -7,7 +7,8 @@
 	<typeAliases>
 	<!-- Class 지정 -->
 	<typeAlias type="mohang.mapper.Organization" alias="Organization"/>
-		<!-- <typeAlias type="kosta.model.Board" alias="Board"/> -->
+	<typeAlias type="mohang.domain.Chat" alias="Chat"/>
+	<!-- <typeAlias type="kosta.model.Board" alias="Board"/> -->
 	</typeAliases>
 
 	<environments default="development">
@@ -21,8 +22,8 @@
 
 	<mappers>
 	<!-- sql 쿼리문 xml 저장 -->
-	 <mapper resource="mohang/mapper/Organization.xml"/>
-		<!-- <mapper resource="kosta/mapper/Board.xml"/>  --> 
+		<mapper resource="mohang/mapper/Organization.xml"/>
+		<mapper resource="mohang/mapper/Chat.xml"/>
 	</mappers>
 
 </configuration>
