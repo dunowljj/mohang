@@ -342,7 +342,7 @@
 				<div class="eventbox_in">
 					<div class="eventbox_img">
 						<div class="heart">
-<<<<<<< HEAD
+
 							<img src="../resources/images/하트.png" alt=""
 								style="width: 30px; height: 30px;">
 						</div>
