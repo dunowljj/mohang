@@ -3,16 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Main</title>
-</head>
-<head>
 <meta charset="utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
 
+<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../resources/css/bootstrap.css" rel="stylesheet" />
 </head>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
 
