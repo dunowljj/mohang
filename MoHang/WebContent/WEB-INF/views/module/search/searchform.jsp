@@ -10,9 +10,10 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/comm/header.jsp"></jsp:include>
-
+<div id="mask"></div>
 	<div id="searchform">
 		<div id="searchform_in">
+			<form action="/MoHang/search/eventsearch.do" method="post" id="searchform_form"> 
 			<div class="searchform_one">
 				<div class="searchtitle">
 					개최기간
@@ -28,6 +29,7 @@
 					<input type="date" class="input_box" id="toDate" > 
 				</div>
 			</div>
+			
 			<div class="searchform_one">
 				<div class="searchtitle">
 					검색 필터
@@ -138,15 +140,23 @@
 					</div>
 					
 				</div>
-				
 			</div>
+				</form>
 			<div class="searchform_one">
 				<div class="searchtitle">
 					선택된 검색 옵션
 				</div>
 				
 				<div style="width: 35px;float: left;"></div>
-				<div class="filter-btn" style="display: none;">검색어 :<i class="far fa-times-circle cursor-pointer"></i></div>
+				<% 
+				   String keyword="";
+			       if(!request.isRequestedSessionIdValid()|| session.getAttribute("keyword")!=null){
+					   keyword=(String)session.getAttribute("keyword"); 
+			       }
+				   if(keyword!=null){
+				%>
+				<div class="filter-btn">검색어 :<%=keyword %><i class="far fa-times-circle cursor-pointer"></i></div>
+				<% } %>
 				<div class="filter-btn" style="display: none;">행사 분야 <i class="far fa-times-circle cursor-pointer"></i></div>
 				<div class="filter-btn" style="display: none;">행사 유형<i class="far fa-times-circle cursor-pointer"></i></div>
 				<div class="filter-btn" style="display: none;">가격<i class="far fa-times-circle cursor-pointer"></i></div>
@@ -155,7 +165,15 @@
 				</c:if>
 			</div>
 			<div class="line"></div>
-			<div class="eventfieldtitle">${field }</div>
+			<% String field=(String)session.getAttribute("field"); 
+			   String eventfield = (String)session.getAttribute("eventfield");
+			%>
+			<% if(field!=null||!request.isRequestedSessionIdValid()) {%>
+			<div class="eventfieldtitle"><%=field %></div>
+			<% } %>
+			<% if(eventfield!=null||!request.isRequestedSessionIdValid()) {%>
+			<div class="eventfieldtitle"><%=eventfield %></div>
+			<% } %>
 			<span class="countevent">10개의 행사가 있습니다.</span>
 		</div>
 	</div>

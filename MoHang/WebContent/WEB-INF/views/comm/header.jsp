@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -154,7 +155,7 @@
             style="width: 140px; height: 80p; background: black;"></a>
          <form method="post" action="/MoHang/search/eventsearch.do" class="event-search" >
             <i class="fas fa-search" id="search_img"></i>
-             <input   class="eventus-input" id="einput" type="search">
+             <input   class="eventus-input" id="einput" type="search" name="keyword">
          </form>
          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav-eventbar">

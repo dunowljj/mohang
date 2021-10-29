@@ -6,8 +6,8 @@ $(function() {
 	var buttonconfirm = $('.button_confirm');
 	$.each(buttons, function(i, item) {
 		$(item).click(function(e) {
-			
-			$(searchs.get(i)).toggle();
+			pwUp_wrapWindowByMask ();
+			$(searchs.get(i)).show();
 			$(searchs.get(i)).click(function(e) {
 				
 				e.stopPropagation();
@@ -19,13 +19,37 @@ $(function() {
 	$.each(buttoncancel, function(i , item) {
 		$(item).click(function() {
 			$(searchs.get(i)).hide();
+			unwrapAllMask();
 		})
 	})
 	$.each(buttonconfirm, function(i , item) {
 		$(item).click(function() {
 			$(searchs.get(i)).hide();
+			unwrapAllMask();
 		})
 	})
+	 
+	/*modal*/ 
+	function pwUp_wrapWindowByMask (){
+		var  pwUp_maskHeight = $(document).height(); 
+		var  pwUp_maskWidth = $(window).width(); 
+		$('#mask').css({'width': pwUp_maskWidth, 'height': pwUp_maskHeight});
+		$('#mask').fadeTo(10,0.8); 
+		$('#wrap').attr('overflow', 'hidden');
+	}
+	function pwUp_unwrapWindowByMask (){
+		$('#mask').fadeOut();
+		$('.search_dropcontent').hide(); 
+	}
+	function unwrapAllMask(){
+		pwUp_unwrapWindowByMask();
+	}
+	$(function(){
+		$('#mask').click(function(e){
+			e.preventDefault();
+			unwrapAllMask()
+		});
+	});
 	// 검색 추가 필터 이벤트
 	var filterbtn = $('.filter-btn');
 	var value = '';
@@ -43,6 +67,7 @@ $(function() {
 			$('.eventfieldtitle').html(value);
 			$('.eventfieldtitle').css('display','');
 		}
+		$("#searchform_form").submit();
 	})
 	// 검색 삭제 필터 이벤트
 	var filterbtns = $('.filter-btn');
