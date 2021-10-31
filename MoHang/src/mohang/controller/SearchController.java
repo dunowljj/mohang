@@ -13,6 +13,7 @@ import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.main.MainAction;
 import mohang.action.search.EventSearchAction;
+import mohang.action.search.EventSearchAction2;
 
 
 @WebServlet("/search/*")
@@ -30,6 +31,13 @@ public class SearchController extends HttpServlet {
     	ActionForward forward = null;
     	if(command.equals("eventsearch.do")) {
     		action = new EventSearchAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("eventsearch2.do")) {
+    		action = new EventSearchAction2();
     		try {
 				forward = action.execute(request, response);	
 			} catch (Exception e) {

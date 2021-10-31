@@ -24,6 +24,7 @@
 	<!-- sql 쿼리문 xml 저장 -->
 		<mapper resource="mohang/mapper/Organization.xml"/>
 		<mapper resource="mohang/mapper/Chat.xml"/>
+		<mapper resource="mohang/mapper/Search.xml"/>
 	</mappers>
 
 </configuration>

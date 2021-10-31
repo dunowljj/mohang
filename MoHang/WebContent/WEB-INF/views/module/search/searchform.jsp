@@ -13,20 +13,20 @@
 <div id="mask"></div>
 	<div id="searchform">
 		<div id="searchform_in">
-			<form action="/MoHang/search/eventsearch.do" method="post" id="searchform_form"> 
+			<form action="/MoHang/search/eventsearch2.do" method="post" id="searchform_form"> 
 			<div class="searchform_one">
 				<div class="searchtitle">
 					개최기간
 				</div>
 				<div style="width: 430px; height: 30px; float: left;"></div>
 				<div class="searchcontext">
-					<input type="date" class="input_box" id="fromDate" > 
+					<input type="date" class="input_box" id="fromDate" name="fromDate" > 
 				</div>
 				<div style="float: left; margin-top: 10px;">
 					~
 				</div>
 				<div class="searchcontext">
-					<input type="date" class="input_box" id="toDate" > 
+					<input type="date" class="input_box" id="toDate" name="toDate"> 
 				</div>
 			</div>
 			
@@ -138,7 +138,7 @@
 							</div>
 						</div>
 					</div>
-					
+						<input type="text" id="check" value="${check }" class="check" name='check' style="display: none;">
 				</div>
 			</div>
 				</form>
@@ -147,34 +147,31 @@
 					선택된 검색 옵션
 				</div>
 				
-				<div style="width: 35px;float: left;"></div>
-				<% 
-				   String keyword="";
-			       if(!request.isRequestedSessionIdValid()|| session.getAttribute("keyword")!=null){
-					   keyword=(String)session.getAttribute("keyword"); 
-			       }
-				   if(keyword!=null){
-				%>
-				<div class="filter-btn">검색어 :<%=keyword %><i class="far fa-times-circle cursor-pointer"></i></div>
-				<% } %>
-				<div class="filter-btn" style="display: none;">행사 분야 <i class="far fa-times-circle cursor-pointer"></i></div>
-				<div class="filter-btn" style="display: none;">행사 유형<i class="far fa-times-circle cursor-pointer"></i></div>
-				<div class="filter-btn" style="display: none;">가격<i class="far fa-times-circle cursor-pointer"></i></div>
-				<c:if test="${field ne null }">
-					<div class="filter-btn">${field }<i class="far fa-times-circle cursor-pointer"></i></div>
+				<c:if test="${!empty keyword }">
+					<div class="filter-btn" id="keyword1">검색어 :${keyword }<i class="far fa-times-circle cursor-pointer"></i></div>
+				</c:if>
+				<div class="filter-btn" id="field1" style="display: none;">행사 분야 <i class="far fa-times-circle cursor-pointer"></i></div>
+				<c:if test="${!empty type }">
+				<div class="filter-btn" id="type1" >${type }<i class="far fa-times-circle cursor-pointer"></i></div>
+				</c:if>
+				<c:if test="${!empty price }">	
+					<div class="filter-btn" id="price1">${price }<i class="far fa-times-circle cursor-pointer"></i></div>
+				</c:if>	
+				<c:if test="${!empty field  }">
+					<div class="filter-btn" id="field1">${field }<i class="far fa-times-circle cursor-pointer"></i></div>
 				</c:if>
 			</div>
 			<div class="line"></div>
-			<% String field=(String)session.getAttribute("field"); 
-			   String eventfield = (String)session.getAttribute("eventfield");
-			%>
-			<% if(field!=null||!request.isRequestedSessionIdValid()) {%>
-			<div class="eventfieldtitle"><%=field %></div>
-			<% } %>
-			<% if(eventfield!=null||!request.isRequestedSessionIdValid()) {%>
-			<div class="eventfieldtitle"><%=eventfield %></div>
-			<% } %>
-			<span class="countevent">10개의 행사가 있습니다.</span>
+			<c:choose >
+				<c:when test="${!empty field  }">
+				<div class="eventfieldtitle">${field }</div>
+				</c:when>
+				<c:otherwise>
+				<div class="eventfieldtitle">${field }</div>
+				</c:otherwise>
+			</c:choose>
+			
+			<span class="countevent">4개의 행사가 있습니다.</span>
 		</div>
 	</div>
 	<div id="container-box">
@@ -192,150 +189,150 @@
 				<div class="keywordbox">
 					<div id="keywordbox_in">
 						<div id="keywordtitlebox">
-							<span class="eventkeywordtitle">행사 인기 검색어</span>
-							<div style="display: inline-block;width: 80px;"></div>
+							<span class="eventkeywordtitle">인기 검색어</span>
+						
 							<div id="keywordscroll">
 								<ul>
-									<li class='rank01'><a href="#">1 행사이름</a></li>
-									<li class='rank02'><a href="#">2 행사이름</a></li>
-									<li class='rank03'><a href="#">3 행사이름</a></li>
-									<li class='rank04'><a href="#">4 행사이름</a></li>
-									<li class='rank05'><a href="#">5 행사이름</a></li>
-									<li class='rank06'><a href="#">6 행사이름</a></li>
-									<li class='rank07'><a href="#">7 행사이름</a></li>
-									<li class='rank08'><a href="#">8 행사이름</a></li>
-									<li class='rank09'><a href="#">9 행사이름</a></li>
-									<li class='rank010'><a href="#">10 행사이름</a></li>
+									<li class='rank01'>1<a href="#"> 외국인유학생 채용박람회</a></li>
+									<li class='rank02'>2<a href="#"> 2021년 제7회 더레저쇼 WITH 차박 캠핑카쇼</a></li>
+									<li class='rank03'>3<a href="#"> 제63회 프랜차이즈 창업박람회 SETEC</a></li>
+									<li class='rank04'>4<a href="#"> 슬기로운 데이터 분석 생활</a></li>
+									<li class='rank05'>5<a href="#"> 2021년 제7회 더레저쇼 WITH 차박 캠핑카쇼</a></li>
+									<li class='rank06'>6<a href="#"> 제63회 프랜차이즈 창업박람회 SETEC</a></li>
+									<li class='rank07'>7<a href="#"> 외국인유학생 채용박람회</a></li>
+									<li class='rank08'>8<a href="#"> 슬기로운 데이터 분석 생활</a></li>
+									<li class='rank09'>9<a href="#"> 2021년 제7회 더레저쇼 WITH 차박 캠핑카쇼</a></li>
+									<li class='rank010'>10<a href="#"> 외국인유학생 채용박람회</a></li>
 								</ul>
 							</div>
 						</div>
 						<div id="keywordraking">
 							<div class="raking">
-								<span><a href="#">1.행사이름</a></span>
+								<span class="raking_c">1.</span><span><a href="#">외국인유학생 채용박람회</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">2.행사이름</a></span>
+								<span class="raking_c">2.</span><span><a href="#">외국인유학생 채용박람회</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">3.행사이름</a></span>
+								<span class="raking_c">3.</span><span><a href="#">외국인유학생 채용박람회</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">4.행사이름</a></span>
+								<span class="raking_c">4.</span><span><a href="#">외국인유학생 채용박람회</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">5.행사이름</a></span>
+								<span class="raking_c">5.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">6.행사이름</a></span>
+								<span class="raking_c">6.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">7.행사이름</a></span>
+								<span class="raking_c">7.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">8.행사이름</a></span>
+								<span class="raking_c">8.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">9.행사이름</a></span>
+								<span class="raking_c">9.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 							<div class="raking">
-								<span><a href="#">10.행사이름</a></span>
+								<span class="raking_c">10.</span><span><a href="#">슬기로운 데이터 분석 생활</a></span>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox_in">
 					<div class="eventimg">
-						<img src="../resources/images/logo.png" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
+						<img src="../resources/images/행사1.jpg" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
 					</div>
 					<div class="eventinformation">
 						<div class="information_1">
-							<span>기간</span> 
-							<div style="    display: inline-block; width: 350px;"></div>
-							<span class="eventprice">가격</span>
+							<span>2021-10-14 ~ 2021-10-17</span> 
+							<div style="display: inline-block; width: 245px;"></div>
+							<span class="eventprice">10000</span>
 						</div>
 						<div class="information_2">
-							<span class="eventtitle_in">행사이름</span>
+							<span class="eventtitle_in"><a href="#">외국인유학생 채용박람회</a></span>
 						</div>
 						<div class="information_3">
-							<span>단체이미지</span>
-							<span>단체이름</span>
-							<div style= "display: inline-block; width: 125px;">
+							<span><img src="../resources/images/logo.png" alt="" style="width: 35px;height: 25xp;"></span>
+							<span>모두의행사?</span>
+							<div style= "display: inline-block; width: 240px;">
 							</div>
-							<span>조회수 이미지</span>
-							<span>조회수</span>
-							<span>하트 이미지</span>
+							<span><img src="../resources/images/눈.png"></span>
+							<span>0</span>
+							<span><img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;"></span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox_in">
 					<div class="eventimg">
-						<img src="../resources/images/logo.png" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
+						<img src="../resources/images/행사5.jpg" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
 					</div>
 					<div class="eventinformation">
 						<div class="information_1">
-							<span>기간</span> 
-							<div style="    display: inline-block; width: 350px;"></div>
-							<span class="eventprice">가격</span>
+							<span>2021-10-16 ~ 2021-10-20</span> 
+							<div style="    display: inline-block; width: 245px;"></div>
+							<span class="eventprice">10000</span>
 						</div>
 						<div class="information_2">
-							<span class="eventtitle_in">행사이름</span>
+							<span class="eventtitle_in"><a href="#">2021년 제7회 더레저쇼 WITH 차박 캠핑카쇼</a></span>
 						</div>
 						<div class="information_3">
-							<span>단체이미지</span>
-							<span>단체이름</span>
-							<div style= "display: inline-block; width: 125px;">
+							<span><img src="../resources/images/logo.png" alt="" style="width: 35px;height: 25xp;"></span>
+							<span>모두의행사?</span>
+							<div style= "display: inline-block; width: 240px;">
 							</div>
-							<span>조회수 이미지</span>
-							<span>조회수</span>
-							<span>하트 이미지</span>
+							<span><img src="../resources/images/눈.png"></span>
+							<span>5</span>
+							<span><img src="../resources/images/빈하트.png" alt="" style="width: 16px; height: 16px;"></span>
+						</div>
+					</div>
+				</div>
+				<div class="eventbox_in">
+					<div class="eventimg"> 
+						<img src="../resources/images/행사6.jpg" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
+					</div>
+					<div class="eventinformation">
+						<div class="information_1">
+							<span>2021-11-01 ~ 2021-11-20</span> 
+							<div style="display: inline-block; width: 245px;"></div>
+							<span class="eventprice">무료</span>
+						</div>
+						<div class="information_2">
+							<span class="eventtitle_in"><a href="#">제63회 프랜차이즈 창업박람회 SETEC</a></span>
+						</div>
+						<div class="information_3">
+							<span><img src="../resources/images/logo.png" alt="" style="width: 35px;height: 25xp;"></span>
+							<span>모두의행사?</span>
+							<div style= "display: inline-block; width: 240px;">
+							</div>
+							<span><img src="../resources/images/눈.png"></span>
+							<span>10</span>
+							<span><img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;"></span>
 						</div>
 					</div>
 				</div>
 				<div class="eventbox_in">
 					<div class="eventimg">
-						<img src="../resources/images/logo.png" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
+						<img src="../resources/images/행사7.jpg" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
 					</div>
 					<div class="eventinformation">
 						<div class="information_1">
-							<span>기간</span> 
-							<div style="    display: inline-block; width: 350px;"></div>
-							<span class="eventprice">가격</span>
+							<span>2021-11-01 ~ 2021-11-24</span> 
+							<div style="    display: inline-block; width: 245px;"></div>
+							<span class="eventprice">10000</span>
 						</div>
 						<div class="information_2">
-							<span class="eventtitle_in">행사이름</span>
+							<span class="eventtitle_in"><a href="#">슬기로운 데이터 분석 생활</a></span>
 						</div>
 						<div class="information_3">
-							<span>단체이미지</span>
-							<span>단체이름</span>
-							<div style= "display: inline-block; width: 125px;">
+							<span><img src="../resources/images/logo.png" alt="" style="width: 35px;height: 25xp;"></span>
+							<span>모두의행사?</span>
+							<div style= "display: inline-block; width: 240px;">
 							</div>
-							<span>조회수 이미지</span>
-							<span>조회수</span>
-							<span>하트 이미지</span>
-						</div>
-					</div>
-				</div>
-				<div class="eventbox_in">
-					<div class="eventimg">
-						<img src="../resources/images/logo.png" style="height : 200px; width: 357px; border: 1px solid #e8e8e8;">
-					</div>
-					<div class="eventinformation">
-						<div class="information_1">
-							<span>기간</span> 
-							<div style="    display: inline-block; width: 350px;"></div>
-							<span class="eventprice">가격</span>
-						</div>
-						<div class="information_2">
-							<span class="eventtitle_in">행사이름</span>
-						</div>
-						<div class="information_3">
-							<span>단체이미지</span>
-							<span>단체이름</span>
-							<div style= "display: inline-block; width: 125px;">
-							</div>
-							<span>조회수 이미지</span>
-							<span>조회수</span>
-							<span>하트 이미지</span>
+							<span><img src="../resources/images/눈.png"></span>
+							<span>15</span>
+							<span><img src="../resources/images/찬하트.png" alt="" style="width: 16px; height: 16px;"></span>
 						</div>
 					</div>
 				</div>

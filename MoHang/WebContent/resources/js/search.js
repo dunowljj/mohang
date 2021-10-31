@@ -50,7 +50,7 @@ $(function() {
 			unwrapAllMask()
 		});
 	});
-	// 검색 추가 필터 이벤트
+	// 검색 추가 필터 이벤트 and form
 	var filterbtn = $('.filter-btn');
 	var value = '';
 	$('input[type=radio]').on('change',function() {
@@ -69,6 +69,14 @@ $(function() {
 		}
 		$("#searchform_form").submit();
 	})
+	// 기간 form 
+	$('#toDate').on('change',function(){
+		var fromDate =$("#fromDate").val();
+		if(fromDate !=null || fromDate ==''){
+			$("#searchform_form").submit();			
+		}
+		
+	})
 	// 검색 삭제 필터 이벤트
 	var filterbtns = $('.filter-btn');
 	var text = '';
@@ -76,10 +84,16 @@ $(function() {
 		$(item).on('click',function(e) {
 			$(item).hide();
 			text = $(item).text();
-			if(i==2||i==4){
-				$('.eventfieldtitle').text(' ');
+			var id=$(this).attr('id');
+			if(id=='field1'){
+				$('.eventfieldtitle').html('<div class="eventfieldtitle"></div>');
+				$("#check").val('field');
+			}else if(id=='type1'){
+				$("#check").val('type');
+			}else if(id== 'price1'){
+				$("#check").val('price');
 			}
-			
+			$("#searchform_form").submit();	
 			$('input[type=radio]').each(function(i) {
 				var value = $(this).val();
 				if(value==text){
@@ -112,6 +126,10 @@ $(function() {
     $('input[type="checkbox"]').bind('click',function() {
             $('input[type="checkbox"]').not(this).prop("checked", false);
     });
-	 
+	// 페이지 이동
+    $('.eventbox_in').on('click',function(){
+    	location.href="#";
+
+    })
 
 })
