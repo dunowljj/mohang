@@ -17,12 +17,12 @@ public class ChatFormAction implements Action {
 		// TODO Auto-generated method stub
 		ActionForward forward = new ActionForward();
 
-		ChatService chatService = ChatService.getInstance();
-		Chat chat = chatService.oneChat();
-		System.out.println(chat.getChat_num());
+		//ChatService chatService = ChatService.getInstance();
+		//Chat chat = chatService.oneChat();
+		//System.out.println(chat.getChat_num());
 		
 		forward.setRedirect(false);
-		forward.setPath("/chatList.jsp");
+		forward.setPath("/WEB-INF/views/module/chat/chatForm.jsp");
 		//forward.setPath("/WEB-INF/views/module/chat/chatForm.jsp");
 		return forward;
 	}
