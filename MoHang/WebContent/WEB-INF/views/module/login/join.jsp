@@ -16,7 +16,10 @@
 <body>
 	<div id="container-box">
 	<div id="container">
-	<div><img src="../resources/images/로고.png" style="margin-left: 800px;"></div>
+	<div>
+		<a href="/MoHang/Main/MoHang.do">
+		<img src="../resources/images/로고.png" style="margin-left: 800px;"></a>
+	</div>
 	 <div class="form-group" style="line-height: 40px; text-align: center;">
 		<label class="form-label mt-4">회원가입을 하시오</label>	
 	 <div class="form-group">

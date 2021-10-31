@@ -17,7 +17,10 @@
 <body>
 	<div id="container-box1">
 	<div id="container">
-	<div><img src="../resources/images/로고.png" style="margin-left: 800px;"></div>
+	<div>
+		<a href="/MoHang/Main/MoHang.do">
+		<img src="../resources/images/로고.png" style="margin-left: 800px;"></a>
+	</div>
 	<div class="form-group" style="text-align:center; line-height: 50px;">
 		<label class="form-label mt-4">로그인을 하시오</label>
 		<div class="form-floating mb-3">
