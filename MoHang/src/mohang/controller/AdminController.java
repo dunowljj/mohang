@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import mohang.action.Action;
 import mohang.action.ActionForward;
 import mohang.action.admin.AdminApproveAction;
+import mohang.action.admin.AdminApproveDetailAction;
 import mohang.action.admin.AdminMainAction;
 import mohang.action.admin.AdminManagementAction;
+import mohang.action.admin.AdminManagementDetailAction;
 import mohang.action.admin.AdminNoticeAction;
 import mohang.action.admin.AdminNoticeInsertFormAction;
 import mohang.action.admin.AdminReservationTicketManagementAction;
@@ -81,6 +83,20 @@ public class AdminController extends HttpServlet {
 			}
     	}else if(command.equals("AdminNoticeInsertForm.do")) {
     		action = new AdminNoticeInsertFormAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminApproveDetail.do")) {
+    		action = new AdminApproveDetailAction();
+    		try {
+				forward = action.execute(request, response);	
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}else if(command.equals("AdminManagementDetail.do")) {
+    		action = new AdminManagementDetailAction();
     		try {
 				forward = action.execute(request, response);	
 			} catch (Exception e) {
