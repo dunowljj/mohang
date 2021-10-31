@@ -15,6 +15,7 @@ import mohang.action.event.ApplyInsertFormShowAction;
 import mohang.action.event.EventApplyListAction;
 import mohang.action.event.EventDetailAction;
 import mohang.action.event.InsertFormAction;
+import mohang.action.event.InsertFormUpdateAction;
 import mohang.action.event.StatisticsListAction;
 import mohang.action.event.StatisticsListDetailAction;
 
@@ -76,6 +77,13 @@ public class EventController extends HttpServlet {
 			}
 		}else if(command.equals("applyInsertFormShow.do")) {
 			action = new ApplyInsertFormShowAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(command.equals("insertFormUpdate.do")) {
+			action = new InsertFormUpdateAction();
 			try {
 				forward = action.execute(request, response);
 			} catch (Exception e) {

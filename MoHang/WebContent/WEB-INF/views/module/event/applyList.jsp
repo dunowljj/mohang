@@ -63,322 +63,288 @@
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+				<td onclick="event.cancelBubble=true"><a href="/MoHang/event/applyInsertFormShow.do" ><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">12/17</font></font></td>
 				<td><div class="arrow"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;" >승인대기</font></font></div></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+				<td onclick="event.cancelBubble=true"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertFormUpdate.do"><button>수정</button><button style="display:none">결제</button></a></font></font></td>
 			</tr>
 			<tr>
 				<td colspan="5" >
 					<div class="listArccodian">
 					<!-- 이미지+글조합 -->
 						<div class="arccodianBox">
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+							<figure >
+								<img src="../resources/images/승인1.png" alt="승인대기" class="imageSize" id="img1"/>
 								<figcaption>승인대기</figcaption>
+							</figure>
+				
+							<figure>
+								<img src="../resources/images/승인3.png" alt="승인반려" class="imageSize" id="img3"/>
+								<figcaption>승인반려</figcaption>
 							</figure>
 							
 							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
+								<img src="../resources/images/승인4.png" alt="승인완료" class="imageSize" id="img4"/>
+								<figcaption>승인완료</figcaption>
 							</figure>
 							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
+						<figure>
+								<img src="../resources/images/승인5.png" alt="결제대기" class="imageSize" id="img5"/>
+								<figcaption>결제대기</figcaption>
 							</figure>
 						
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
+								<figure>
+								<img src="../resources/images/승인6.png" alt="행사대기" class="imageSize" id="img6"/>
+								<figcaption>행사대기</figcaption>
 							</figure>
-						
+							
+							<figure>
+								<img src="../resources/images/승인7.png" alt="행사진행중" class="imageSize" id="img7"/>
+								<figcaption>행사진행중</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인8.png" alt="행사완료" class="imageSize" id="img8"/>
+								<figcaption>행사완료</figcaption>
+							</figure> 
 						</div>
-
 					</div>
 				</td>
 			</tr>
 	<!-- 아코디언  한덩어리 실험 -->
-	<tr>
+<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
+				<td onclick="event.cancelBubble=true"><a href="/MoHang/event/applyInsertFormShow.do" ><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">12/17</font></font></td>
 				<td><div class="arrow"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></div></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
+						style="vertical-align: inherit;" >승인대기</font></font></div></td>
+				<td onclick="event.cancelBubble=true"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertFormUpdate.do"><button>수정</button><button style="display:none">결제</button></a></font></font></td>
 			</tr>
 			<tr>
 				<td colspan="5" >
 					<div class="listArccodian">
 					<!-- 이미지+글조합 -->
 						<div class="arccodianBox">
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
+							<figure >
+								<img src="../resources/images/승인1.png" alt="승인대기" class="imageSize" id="img1"/>
 								<figcaption>승인대기</figcaption>
 							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-						</div>
-
-					</div>
-				</td>
-			</tr>
-			
-				<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/17</font></font></td>
-				<td><div class="arrow"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></div></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
-			</tr>
-			<tr>
-				<td colspan="5" >
-					<div class="listArccodian">
-					<!-- 이미지+글조합 -->
-						<div class="arccodianBox">
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-						</div>
-
-					</div>
-				</td>
-			</tr>
-			
-				<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/17</font></font></td>
-				<td><div class="arrow"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></div></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
-			</tr>
-			<tr>
-				<td colspan="5" >
-					<div class="listArccodian">
-					<!-- 이미지+글조합 -->
-						<div class="arccodianBox">
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-						</div>
-
-					</div>
-				</td>
-			</tr>
-			
-				<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">1</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/17</font></font></td>
-				<td><div class="arrow"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></div></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
-			</tr>
-			<tr>
-				<td colspan="5" >
-					<div class="listArccodian">
-					<!-- 이미지+글조합 -->
-						<div class="arccodianBox">
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-							
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-							<figure>
-								<img src="../resources/images/loading.png" alt="승인대기" class="imageSize"/>
-								<figcaption>승인대기</figcaption>
-							</figure>
-						
-						</div>
-
-					</div>
-				</td>
-			</tr>
-	
-			
-			
-			
-			
-			
-		<!-- 	<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">2</font></font></th>
-				<td><a href="/MoHang/event/applyInsertFormShow.do"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">~행사입니다</font></font></a></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/18</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인대기</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"><a href="/MoHang/event/applyInsertForm.do"><button>수정</button></a></font></font></td>
-			</tr>
 				
+							<figure>
+								<img src="../resources/images/승인3.png" alt="승인반려" class="imageSize" id="img3"/>
+								<figcaption>승인반려</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인4.png" alt="승인완료" class="imageSize" id="img4"/>
+								<figcaption>승인완료</figcaption>
+							</figure>
+							
+						<figure>
+								<img src="../resources/images/승인5.png" alt="결제대기" class="imageSize" id="img5"/>
+								<figcaption>결제대기</figcaption>
+							</figure>
+						
+								<figure>
+								<img src="../resources/images/승인6.png" alt="행사대기" class="imageSize" id="img6"/>
+								<figcaption>행사대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인7.png" alt="행사진행중" class="imageSize" id="img7"/>
+								<figcaption>행사진행중</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인8.png" alt="행사완료" class="imageSize" id="img8"/>
+								<figcaption>행사완료</figcaption>
+							</figure> 
+						</div>
+					</div>
+				</td>
+			</tr>
+			
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">3</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td onclick="event.cancelBubble=true"><a href="/MoHang/event/applyInsertFormShow.do" ><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">행사2입니다</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/18</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">심사중</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"></font></font></td>
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;" >승인대기</font></font></div></td>
+				<td onclick="event.cancelBubble=true"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertFormUpdate.do"><button>수정</button><button style="display:none">결제</button></a></font></font></td>
 			</tr>
 			<tr>
-				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">4</font></font></th>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">여행을 우리 가봅시다</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/18</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">승인완료</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"></font></font></td>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure >
+								<img src="../resources/images/승인1.png" alt="승인대기" class="imageSize" id="img1"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+				
+							<figure>
+								<img src="../resources/images/승인3.png" alt="승인반려" class="imageSize" id="img3"/>
+								<figcaption>승인반려</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인4.png" alt="승인완료" class="imageSize" id="img4"/>
+								<figcaption>승인완료</figcaption>
+							</figure>
+							
+						<figure>
+								<img src="../resources/images/승인5.png" alt="결제대기" class="imageSize" id="img5"/>
+								<figcaption>결제대기</figcaption>
+							</figure>
+						
+								<figure>
+								<img src="../resources/images/승인6.png" alt="행사대기" class="imageSize" id="img6"/>
+								<figcaption>행사대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인7.png" alt="행사진행중" class="imageSize" id="img7"/>
+								<figcaption>행사진행중</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인8.png" alt="행사완료" class="imageSize" id="img8"/>
+								<figcaption>행사완료</figcaption>
+							</figure> 
+						</div>
+					</div>
+				</td>
 			</tr>
+			
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">5</font></font></th>
+						style="vertical-align: inherit;">1</font></font></th>
+				<td onclick="event.cancelBubble=true"><a href="/MoHang/event/applyInsertFormShow.do" ><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">여행을 우리 또 가봅시다</font></font></td>
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;" >승인대기</font></font></div></td>
+				<td onclick="event.cancelBubble=true"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertFormUpdate.do"><button>수정</button><button style="display:none">결제</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure >
+								<img src="../resources/images/승인1.png" alt="승인대기" class="imageSize" id="img1"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+				
+							<figure>
+								<img src="../resources/images/승인3.png" alt="승인반려" class="imageSize" id="img3"/>
+								<figcaption>승인반려</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인4.png" alt="승인완료" class="imageSize" id="img4"/>
+								<figcaption>승인완료</figcaption>
+							</figure>
+							
+						<figure>
+								<img src="../resources/images/승인5.png" alt="결제대기" class="imageSize" id="img5"/>
+								<figcaption>결제대기</figcaption>
+							</figure>
+						
+								<figure>
+								<img src="../resources/images/승인6.png" alt="행사대기" class="imageSize" id="img6"/>
+								<figcaption>행사대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인7.png" alt="행사진행중" class="imageSize" id="img7"/>
+								<figcaption>행사진행중</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인8.png" alt="행사완료" class="imageSize" id="img8"/>
+								<figcaption>행사완료</figcaption>
+							</figure> 
+						</div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<th scope="row"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">1</font></font></th>
+				<td onclick="event.cancelBubble=true"><a href="/MoHang/event/applyInsertFormShow.do" ><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;">~여행을 떠나요</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">12/18</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;">반려</font></font></td>
-				<td><font style="vertical-align: inherit;"><font
-						style="vertical-align: inherit;"></font></font></td>
-			</tr> -->
+						style="vertical-align: inherit;">12/17</font></font></td>
+				<td><div class="arrow"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;" >승인대기</font></font></div></td>
+				<td onclick="event.cancelBubble=true"><font style="vertical-align: inherit;"><font
+						style="vertical-align: inherit;"><a href="/MoHang/event/insertFormUpdate.do"><button>수정</button><button style="display:none">결제</button></a></font></font></td>
+			</tr>
+			<tr>
+				<td colspan="5" >
+					<div class="listArccodian">
+					<!-- 이미지+글조합 -->
+						<div class="arccodianBox">
+							<figure >
+								<img src="../resources/images/승인1.png" alt="승인대기" class="imageSize" id="img1"/>
+								<figcaption>승인대기</figcaption>
+							</figure>
+				
+							<figure>
+								<img src="../resources/images/승인3.png" alt="승인반려" class="imageSize" id="img3"/>
+								<figcaption>승인반려</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인4.png" alt="승인완료" class="imageSize" id="img4"/>
+								<figcaption>승인완료</figcaption>
+							</figure>
+							
+						<figure>
+								<img src="../resources/images/승인5.png" alt="결제대기" class="imageSize" id="img5"/>
+								<figcaption>결제대기</figcaption>
+							</figure>
+						
+								<figure>
+								<img src="../resources/images/승인6.png" alt="행사대기" class="imageSize" id="img6"/>
+								<figcaption>행사대기</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인7.png" alt="행사진행중" class="imageSize" id="img7"/>
+								<figcaption>행사진행중</figcaption>
+							</figure>
+							
+							<figure>
+								<img src="../resources/images/승인8.png" alt="행사완료" class="imageSize" id="img8"/>
+								<figcaption>행사완료</figcaption>
+							</figure> 
+						</div>
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			
+			
+	
 			
 		</tbody>
 		</table>

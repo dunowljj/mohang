@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Organization Information Update</title>
+<title>단체정보수정</title>
 
 
 <link href="../resources/css/organization.css" rel="stylesheet">

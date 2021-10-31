@@ -13,19 +13,17 @@
 	}
 	
 	.applyForm{
-		width: 100%;
-	
+	width: 100%;
 	border: #808080 solid 2px;
 	border-radius: 10px;
 	}
+	
 	h6 b{
 	font-size: 18px;
     position: relative;
     top: 20px;
 	margin:10px ;
 	color: #400080;
-
-		
 	}
 	
 	.tr1{
@@ -70,7 +68,10 @@
 	width: 500px;;
 	}
 	
-	
+	.period{
+	position: relative;
+    left: -315px;
+	}
 
 	.gray{
     height: 30px;
@@ -83,11 +84,13 @@
 	
 	.goLeft{
 	position: relative;
-    left: -280px;
+    left: -210px;
     }
+    
+    
 	.bb{
 	position: relative;
-    left: -850px;
+    left: -888px;
     }
     
     .textarea{
@@ -117,6 +120,13 @@
    
    #e_priceSmall{
    width:15%;
+	float: left;
+   }
+   
+   .checkBox{
+       position: relative;
+    left: -410px;
+    top: 5px;
    }
       /*event/applyInsertFormshow.jsp */
    	.s_tbname{
@@ -136,25 +146,29 @@
    /* event/applyList.jsp */
    .listArccodian{
 	margin: 0 auto;
+	margin-top: 10px;
 	}
 
 	.arccodianBox{
-
+	width:90%;
+	display: table;
+	table-layout: fixed;
+	margin-left: 115px;
 	}
 
 	.imageSize{
-	width:70px;
-	height:70px;
+
+	width:60px;
+	height:60px;
 	}
 
 
 	.arccodianBox figure {
-    margin: 0 0 1rem;
-    float: left;
-    margin-right: 108px;
+	margin: 0 auto;
+    display:table-cell;
+   	opacity:0.3;
 	}
 
 	figcaption{
-	margin: 10px 0px 0px 10px;
+	margin: 10px 0px 0px 6px;
 	}
-  
