@@ -61,7 +61,7 @@
 			<tr>
 				<th scope="row"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">이서준</font></font></th>
-				<td><a href="/MoHang/Review/ReviewDetail.do"><font style="vertical-align: inherit;"><font
+				<td><a href="/MoHang/views/admin/AdminManagementDetail.do"><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">서준123</font></font></a></td>
 				<td><font style="vertical-align: inherit;"><font
 						style="vertical-align: inherit;">010-0000-0000</font></font></td>
