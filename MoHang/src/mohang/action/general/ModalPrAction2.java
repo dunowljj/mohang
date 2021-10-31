@@ -13,8 +13,7 @@ public class ModalPrAction2 implements GeneralAction {
 		ActionForward forward = new ActionForward();
 		GeneralService service = GeneralService.getInstance();
 		
-		forward.setPath("/WEB-INF/views/module/general/ticketDetail.jsp");
-//		forward.setPath("/WEB-INF/views/module/general/reserveCancel.jsp");
+		forward.setPath("/WEB-INF/views/module/general/likeList2.jsp");
 		forward.setRedirect(false);
 
 		return forward;

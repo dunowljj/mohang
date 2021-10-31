@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<%-- <link href="${pageContext.request.contextPath}/resources/css/general-style.css" rel="stylesheet" type="text/css"/> --%>
+<link href="${pageContext.request.contextPath}/resources/css/general-style.css" rel="stylesheet" type="text/css"/>
 <title>Insert title here</title>
 </head>
 <body>
@@ -52,4 +52,3 @@
 	<jsp:include page="/WEB-INF/views/comm/footer.jsp"></jsp:include>
 </body>
 </html>
-
