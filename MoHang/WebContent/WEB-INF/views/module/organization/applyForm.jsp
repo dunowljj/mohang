@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Organization Apply Form</title>
+<title>단체정보신청</title>
 
 <link href="../resources/css/organization.css" rel="stylesheet">
 

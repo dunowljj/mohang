@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Event Apply Form</title>
+<title>행사신청정보변경</title>
 <link href="../resources/css/event.css" rel="stylesheet">
 </head>
 <body>
@@ -21,15 +21,16 @@
 	<div id="container">
 	<div class="applyPage">
 		<div class="subTitle">
-			<h3>행사 신청</h3>
+			<h3>행사 신청 정보 변경</h3>
 		</div>
 		<div class="subsubTitle">
 		<br>
-			<h6>주최할 행사의 상세내용을 입력하여 주세요 :)</h6>
+			<h6>주최할 행사의 상세내용을 변경하여 주세요 :)</h6>
 		<br>
 		</div>
 
 
+		
 		<form>
 			<div class="applyForm" action="ApplyFormAction.java">
 				<table class="tb">
@@ -157,7 +158,7 @@
 			<!-- applyForm -->
 			<br>
 			<div class="btnPage">
-				<button type="button" class="btn btn-primary btn-sm" type="submit">제출</button>
+				<button type="button" class="btn btn-primary btn-sm" type="submit">수정</button>
 				&nbsp&nbsp&nbsp&nbsp
 				<button type="button" class="btn btn-secondary btn-sm" type="reset">취소</button>
 			</div>

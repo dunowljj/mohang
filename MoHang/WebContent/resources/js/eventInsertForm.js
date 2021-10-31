@@ -117,6 +117,36 @@ $(function() {
     }
     
     
+    
+    //행사대표이미지 미리보기
+    	openFile = function(event) { 
+    		var input = event.target;
+    		var reader = new FileReader();
+    		reader.onload = function(){ 
+    			var dataURL = reader.result; 
+    			var titleImage = document.getElementById('titleImage'); 
+    			titleImage.src = dataURL;
+    		}; 
+    		reader.readAsDataURL(input.files[0]); 
+    	};
+    
+    //행사상세이미지	
+    	openFile2 = function(event) { 
+    		var input2 = event.target;
+    		var reader2 = new FileReader();
+    		reader2.onload = function(){ 
+    			var dataURL2 = reader2.result; 
+    			var contentImage2 = document.getElementById('contentImage'); 
+    			contentImage2.src = dataURL2;
+    		}; 
+    		reader2.readAsDataURL(input2.files[0]); 
+    	};
+    	
+    
+
+    
+    
+    
 
     
 
